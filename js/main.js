@@ -26,9 +26,9 @@ $(window).scroll(expandCircles);
 // hover animation
 
 $(document).ready(function () {
-    var fadeInSpeed = 1500;
-    var fadeOutSpeed = 1200;
-    var circleAnimationSpeed = 2500;
+    var fadeInSpeed = 500;
+    var fadeOutSpeed = 500;
+    var circleAnimationSpeed = 1300;
 
     $('.person-img').hover(
         function () {
