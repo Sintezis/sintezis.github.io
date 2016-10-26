@@ -1,6 +1,6 @@
 var $circles = $('.circle');
 var $circleTitle = $('.circle-title');
-var circleOffsetTop = $circles.eq(0).offset().top - 800;
+var circleOffsetTop = $circles.eq(0).offset().top - 600;
 
 var expandCircles = function () {
     if ($circles.eq(0).hasClass('circle-expanded')) {
@@ -15,7 +15,7 @@ var expandCircles = function () {
         $('.person-3').addClass('person-3-moved');
         $('.person-4').addClass('person-4-moved');
         $('.person-5').addClass('person-5-moved');
-        $("#midd_div_text").addClass("midle_div_anim_text_1");
+        $(".text-animation-circle-main").addClass("text-animation-circle-main-animated");
     }
 };
 
@@ -26,9 +26,9 @@ $(window).scroll(expandCircles);
 // hover animation
 
 $(document).ready(function () {
-    var fadeInSpeed = 500;
-    var fadeOutSpeed = 500;
-    var circleAnimationSpeed = 1300;
+    var fadeInSpeed = 100;
+    var fadeOutSpeed = 300;
+    var circleAnimationSpeed = 500;
 
     $('.person-img').hover(
         function () {
@@ -41,7 +41,7 @@ $(document).ready(function () {
                 $circles.addClass('circle-expanded');
 
                 setTimeout(function() {
-                    $('.person' + textId + '_text').fadeTo(fadeInSpeed, '1');
+                    $('.person' + textId + '-text').fadeTo(fadeInSpeed, '1');
                 }, circleAnimationSpeed);
             }, circleAnimationSpeed);
 
@@ -50,7 +50,7 @@ $(document).ready(function () {
             $circleTitle.stop().fadeIn();
 
             var textId = $(this).data('id');
-            $('.person' + textId + '_text').fadeTo(fadeOutSpeed, '0');
+            $('.person' + textId + '-text').fadeTo(fadeOutSpeed, '0');
         }
     );
 
