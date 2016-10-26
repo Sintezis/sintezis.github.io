@@ -1,6 +1,6 @@
 var $circles = $('.circle');
 var $circleTitle = $('.circle-title');
-var circleOffsetTop = $circles.eq(0).offset().top - 800;
+var circleOffsetTop = $circles.eq(0).offset().top - 600;
 
 var expandCircles = function () {
     if ($circles.eq(0).hasClass('circle-expanded')) {
