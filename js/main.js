@@ -1,65 +1,27 @@
-var $circles = $('.circle');
-var $circleTitle = $('.circle-title');
-var circleOffsetTop = $circles.eq(0).offset().top - 600;
+/* menu */
+$(document).ready(function(){
 
-var expandCircles = function () {
-    if ($circles.eq(0).hasClass('circle-expanded')) {
-        return;
-    }
-
-    if ($(window).scrollTop() > circleOffsetTop) {
-        $circles.addClass('circle-expanded');
-
-        $('.person-1').addClass('person-1-moved');
-        $('.person-2').addClass('person-2-moved');
-        $('.person-3').addClass('person-3-moved');
-        $('.person-4').addClass('person-4-moved');
-        $('.person-5').addClass('person-5-moved');
-        $(".text-animation-circle-main").addClass("text-animation-circle-main-animated");
-    }
-};
-
-expandCircles();
-
-$(window).scroll(expandCircles);
-
-// hover animation
-
-$(document).ready(function () {
-    var fadeInSpeed = 100;
-    var fadeOutSpeed = 300;
-    var circleAnimationSpeed = 500;
-
-    $('.person-img').hover(
-        function () {
-            var textId = $(this).data('id');
-
-            $circleTitle.stop().fadeOut();
-            $circles.not('.circle-5').removeClass('circle-expanded');
-
-            setTimeout(function() {
-                $circles.addClass('circle-expanded');
-
-                setTimeout(function() {
-                    $('.person' + textId + '-text').fadeTo(fadeInSpeed, '1');
-                }, circleAnimationSpeed);
-            }, circleAnimationSpeed);
-
-        },
-        function () {
-            $circleTitle.stop().fadeIn();
-
-            var textId = $(this).data('id');
-            $('.person' + textId + '-text').fadeTo(fadeOutSpeed, '0');
-        }
-    );
+	var a=$(".mobile-menu-icon"),
+	b=$(".mobile-menu"),
+	c=($("body"),
+	$(".mobile-menu a"));
+	a.on("click",function(){a.toggleClass("active"),
+		b.toggleClass("active")});
+	var d=function(){a.removeClass("active"),
+	b.removeClass("active")};
+	c.on("click",function(){$(this);d()
+	})
 
 
-    $(window).scroll(function () { // check if scroll event happened
-        if ($(document).scrollTop() > 5) { // check if user scrolled more than 50 from top of the browser window
-            $(".navbar-fixed-top").css({"background-color": "#000"}); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+/* navibar */
+
+    var waypoint = $(".waypoint").offset().top;
+
+ $(window).scroll(function () { 
+        if ($(document).scrollTop() > waypoint ) { 
+            $(".navigation-bar").addClass("navigation-bar-animate")
         } else {
-            $(".navbar-fixed-top").css({"background-color": "transparent"}); // if not, change it back to transparent
+            $(".navigation-bar").removeClass("navigation-bar-animate")
         }
     });
 
