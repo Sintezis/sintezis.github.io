@@ -96,7 +96,7 @@ h3{ color: #168fef;}
 
 .mobile-menu{
 	position:fixed;
-	background:rgba(0,0,0,0.75);
+	background:rgba(0,0,0,0.85);
 	z-index:50;
 	overflow:auto;
 	top:0;left:0;
@@ -108,11 +108,25 @@ h3{ color: #168fef;}
 	user-select:none;
 	opacity:0;
 	visibility:hidden;
-	-webkit-transform:scale(0.7, 0.7);
-	-ms-transform:scale(0.7, 0.7);
-	transform:scale(0.7, 0.7);
+	-webkit-transform:scale(0.8, 0.8);
+	-ms-transform:scale(0.8, 0.8);
+	transform:scale(0.8, 0.8);
 	-webkit-transition:opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 	transition:opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out
+}
+
+.columns{
+	float: right;
+	margin-right: 15px;
+}
+.mail-phone{
+	float: left;
+	padding-right: 25px;
+}
+.mail-phone p{
+	padding-right: 25px;
+	float: left;
+	margin-top: 20px;
 }
 
 /* main nav  links*/
@@ -295,7 +309,6 @@ footer{
 
 /* about */
 .about-footer{
-	padding: 25px 100px 25px 100px;
 }
 .about-footer p{
 	padding-bottom: 25px;
