@@ -1,4 +1,15 @@
 /* menu */
+
+
+/* preload */
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
+
+/* menu on navbar */
+
 $(document).ready(function(){
 
 	var a=$(".mobile-menu-icon"),
@@ -26,6 +37,20 @@ $(document).ready(function(){
     });
 
 
+/* smood scroll */
+
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
 });
+
+});
+
+
+
+/* about us */
+
 
 
