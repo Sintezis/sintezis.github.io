@@ -46,6 +46,32 @@ $('a').click(function(){
     return false;
 });
 
+
+
+
+      $( ".person-1-pic" ).click(function() {
+		  alert( "1" );
+});
+       $( ".person-2-pic" ).click(function() {
+ 		 alert( "2" );
+});
+       $( ".person-3-pic" ).click(function() {
+ 			 alert( "3" );
+});
+        $( ".person-4-pic" ).click(function() {
+  				alert( "4" );
+});
+        $( ".person-5-pic" ).click(function() {
+				  alert( "5" );
+});
+        $( ".person-6-pic" ).click(function() {
+			alert( "6" );
+});
+        $( ".person-7-pic" ).click(function() {
+  alert( "7" );
+});
+
+
 });
 
 
