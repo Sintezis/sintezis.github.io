@@ -49,34 +49,91 @@ $('a').click(function(){
 
 
 
-      $( ".person-1-pic" ).click(function() {
-		  alert( "1" );
-});
-       $( ".person-2-pic" ).click(function() {
- 		 alert( "2" );
-});
-       $( ".person-3-pic" ).click(function() {
- 			 alert( "3" );
-});
-        $( ".person-4-pic" ).click(function() {
-  				alert( "4" );
-});
-        $( ".person-5-pic" ).click(function() {
-				  alert( "5" );
-});
-        $( ".person-6-pic" ).click(function() {
-			alert( "6" );
-});
-        $( ".person-7-pic" ).click(function() {
-  alert( "7" );
-});
-
-
-});
-
-
-
 /* about us */
+
+
+	/* changing circle picture and rotation PERSON 1 */
+      $( ".person-1-pic" ).click(function() {
+		  $(".pieContainer").removeClass("pieContainer-move-2 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-1");
+		 	 $(".sintezis-circle-img").fadeOut(500, function() {
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic1.png)').fadeIn(500);
+    		});
+	/* changing text about  */
+        	$(".positon-text-about").addClass('show-hide-text-about');
+        	$(".person-1-text-about").removeClass('show-hide-text-about');
+});
+
+	/* changing circle picture and rotation  PERSON 2 */
+       $( ".person-2-pic" ).click(function() {
+       	$(".pieContainer").removeClass("pieContainer-move-1 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-2");
+       		$(".sintezis-circle-img").fadeOut(400, function() {
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic2.png)').fadeIn(400);
+    		});
+   	/* changing text about */
+        	$(".positon-text-about").addClass('show-hide-text-about');
+        	$(".person-2-text-about").removeClass('show-hide-text-about'); 	
+});	
+
+	/* changing circle picture and rotation PERSON 3 */
+       $( ".person-3-pic" ).click(function() {
+       	$(".pieContainer").removeClass("pieContainer-move-3 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-3");
+       		$(".sintezis-circle-img").fadeOut(400, function() {
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic3.png)').fadeIn(400);
+    		});
+	/* changing text about */
+    		$(".positon-text-about").addClass('show-hide-text-about');
+        	$(".person-3-text-about").removeClass('show-hide-text-about');
+    		
+});
+	/* changing circle picture and rotation PERSON 4 */
+        $( ".person-4-pic" ).click(function() {
+        	$(".pieContainer").removeClass("pieContainer-move-4 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-4");
+  				$(".sintezis-circle-img").fadeOut(400, function() {
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic4.png)').fadeIn(400);
+    		});
+	/* changing text about */
+  			$(".positon-text-about").addClass('show-hide-text-about');
+        	$(".person-4-text-about").removeClass('show-hide-text-about');
+});
+
+	/* changing circle picture and rotation  PERSON 5*/
+        $( ".person-5-pic" ).click(function() {
+        	$(".pieContainer").removeClass("pieContainer-move-5 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-5");
+				$(".sintezis-circle-img").fadeOut(400, function() {
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic5.png)').fadeIn(400);
+    		});		
+	/* changing text about */
+    		$(".positon-text-about").addClass('show-hide-text-about');
+        	$(".person-5-text-about").removeClass('show-hide-text-about');
+});
+
+    /* changing circle picture and rotation PERSON 6*/
+        $( ".person-6-pic" ).click(function() {
+        	$(".pieContainer").removeClass("pieContainer-move-6 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-6");
+				$(".sintezis-circle-img").fadeOut(400, function() {
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic6.png)').fadeIn(400);
+    		});	
+	/* changing text about */
+			$(".positon-text-about").addClass('show-hide-text-about');
+        	$(".person-6-text-about").removeClass('show-hide-text-about');
+});
+
+    /* changing circle picture and rotation  PERSON 7*/
+        $( ".person-7-pic" ).click(function() {
+        	$(".pieContainer").removeClass("pieContainer-move-7 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-7");
+ 				$(".sintezis-circle-img").fadeOut(400, function() {
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic7.png)').fadeIn(400);
+    		});		
+	/* changing text about */
+    		$(".positon-text-about").addClass('show-hide-text-about');
+        	$(".person-7-text-about").removeClass('show-hide-text-about');	
+});
+
+
+
+
+
+});
 
 
 
