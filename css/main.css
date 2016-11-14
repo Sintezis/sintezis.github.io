@@ -1,14 +1,14 @@
 
 /* main CSS */
 body{ 
-  background: url('../img/SintezisBG.jpg') no-repeat center center fixed; 
+  background: url('../img/SintezisBg.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-
+a:hover{text-decoration: none;}
 p{color: #DCDCDC;}
 h1{color: #FFF;}
 h2{color: #FFF;}
@@ -57,7 +57,7 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 	padding:10px;
 	border-radius:100%;
 	overflow:hidden;
-	border:2px solid #168fef;
+	border:2px solid #1990b2;
 	-webkit-user-select:none;
 	-moz-user-select:none;
 	-ms-user-select:none;
@@ -94,7 +94,7 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 	transform:translateY(0)
 }
 .mobile-menu-icon.active{border:2px solid white}
-.mobile-menu-icon.active div{border:0;background-color:#168fef}
+.mobile-menu-icon.active div{border:0;background-color:#1990b2}
 .mobile-menu-icon.active div:nth-child(1){-webkit-transform:rotate(40deg);-ms-transform:rotate(40deg);transform:rotate(40deg);top:47%}
 .mobile-menu-icon.active div:nth-child(2){-webkit-transform:rotate(-40deg);-ms-transform:rotate(-40deg);transform:rotate(-40deg);top:47%}
 .mobile-menu-icon.active div:nth-child(3){-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px);opacity:0;visibility:hidden}
@@ -117,7 +117,8 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 	-ms-transform:scale(0.8, 0.8);
 	transform:scale(0.8, 0.8);
 	-webkit-transition:opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-	transition:opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out
+	transition:opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  text-align: center;
 }
 
 .columns{
@@ -141,7 +142,8 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 	-webkit-transform:scale(1, 1);
 	-ms-transform:scale(1, 1);
 	transform:scale(1, 1);
-	opacity:1;visibility:visible
+	opacity:1;visibility:visible;
+  text-align: center;
 }
 .mobile-menu ul{
 	list-style:none;
@@ -529,14 +531,175 @@ fieldset{
 
 
 
-
-
 /* text about us */
 .main-wheel-sintezis{
   margin-top: 40%;
-    text-align: center;
+  text-align: center;
 }
 
 .main-wheel-sintezis h1{
   font-size: 75px;
+}
+
+/* wheel */
+
+
+.pieContainer {
+     height: 573px;
+     width:732px ;
+    position: relative;
+     transform-origin: center center; 
+     transition: 1s;
+}
+.pieContainer-move-1{
+ transform: rotate(306deg);
+}
+.pieContainer-move-2{
+  transform: rotate(255deg);
+}
+.pieContainer-move-3{
+  transform: rotate(204deg);
+}
+.pieContainer-move-4{
+  transform: rotate(153deg);
+}
+.pieContainer-move-5{
+  transform: rotate(102deg);
+}
+.pieContainer-move-6{
+ transform: rotate(51deg);
+}
+.pieContainer-move-7{
+  transform: rotate(0deg);
+}
+.pieBackground{
+    transform-origin: bottom center;
+    position: absolute;
+    cursor:pointer;
+    left: 34%;
+
+}
+.person-1{
+  -webkit-transform: rotate(51.42deg);
+    -moz-transform: rotate(51.42deg);
+    -o-transform: rotate(51.42deg);
+    -ms-transform: rotate(51.42deg);
+    transform: rotate(51.42deg);
+
+  }
+
+.person-2{
+   -webkit-transform: rotate(102.84deg);
+    -moz-transform: rotate(102.84deg);
+    -o-transform: rotate(102.84deg);
+    -ms-transform: rotate(102.84deg);
+    transform: rotate(102.84deg);
+  }
+
+.person-3{
+     -webkit-transform: rotate(154.26deg);
+    -moz-transform: rotate(154.26deg);
+    -o-transform: rotate(154.26deg);
+    -ms-transform: rotate(154.26deg);
+    transform: rotate(154.26deg);
+  }
+
+.person-4{
+     -webkit-transform: rotate(205.68deg);
+    -moz-transform: rotate(205.68deg);
+    -o-transform: rotate(205.68deg);
+    -ms-transform: rotate(205.68deg);
+  }
+
+.person-5{ 
+     -webkit-transform: rotate(257.10deg);
+    -moz-transform: rotate(257.10deg);
+    -o-transform: rotate(257.10deg);
+    -ms-transform: rotate(257.10deg);
+    transform: rotate(257.10deg);
+
+  }
+
+.person-6{
+     -webkit-transform: rotate(308.52deg);
+    -moz-transform: rotate(308.52deg);
+    -o-transform: rotate(308.52deg);
+    -ms-transform: rotate(308.52deg);
+    transform: rotate(308.52deg);
+  }
+
+.person-7{
+     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+
+/* middle picture  */
+
+.central-wheel-picture{
+    left: 204px;
+    margin-top: 137px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    background-image: url('../img/team/sintezis-circle.png');
+    height: 300px;
+    width: 300px;
+
+}
+
+
+.sintezis-circle-img{
+    position: absolute;
+    z-index: 8;
+    border-radius: 50%;
+    background-image: url('../img/team/sintezis-circle.png');
+    height: 300px;
+    width: 300px;
+
+}
+.container-wheel{ 
+  height: 573px;
+  width: 600px;
+  margin-left: -28px;
+}
+
+.aboutus-main-container{
+  margin-top: 260px;
+}
+
+/* text - person - about */
+.text-tite-person{}
+.text-aboutus-person{color: #DCDCDC; padding-top: 25px;}
+.person-webpage{padding-top: 25px;}
+
+.sintezis-text-about{
+  opacity: 1;}
+
+.show-hide-text-about{
+  opacity: 0;
+
+}
+
+.positon-text-about{
+  padding-top: 50px;
+  position: absolute;
+  transition: 2s;
+
+}
+
+/* navigation bar about page */ 
+
+.navigation-bar-about{
+  margin: 0 auto;
+   width: 100%;
+   height: 80px;
+   background-color: rgba(0, 0, 0, 0.4);
+   z-index: 100;
+   top: 0;
+   position: fixed;
+   opacity: 1;
 }
