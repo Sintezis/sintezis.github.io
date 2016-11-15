@@ -404,6 +404,21 @@ fieldset{
     margin-right: 10px;
 }
 
+.button-mote{
+     width: auto;
+    background-color: #1990b2;
+    color: white;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 3px;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    float: left;
+    margin-left: 10px;
+}
+
+}
+
 /* contact */
 .contact-footer{
 	padding: 25px;
