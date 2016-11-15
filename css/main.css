@@ -185,7 +185,7 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 }
 .about-text-main-container{
     padding: 15px;
-  padding-top: 80px;
+  padding-top: 31px;
   min-height: 267px;
 }
 
@@ -280,15 +280,15 @@ font-size: 30px;
 
 
 .line-5-6{
- background-color: #fff;
-    height: 423px;
+   background-color: #fff;
+    height: 636px;
     opacity: 0.3;
     position: absolute;
-    right: 432px;
-    top: 1364px;
-    transform: rotate(42deg);
-    -webkit-transform: rotate(42deg); 
-    -moz-transform: rotate(42deg);
+    right: 583px;
+  top: 1226px;
+    transform: rotate(70deg);
+      -webkit-transform: rotate(70deg); 
+    -moz-transform: rotate(70deg);
     width: 2px;
 }
 
