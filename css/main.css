@@ -179,9 +179,34 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 
 .services-text{
 	padding: 25px;
-	padding-top: 35px;
+	padding-top: 80px;
 	min-height: 267px;
 
+}
+.about-text-main-container{
+    padding: 15px;
+  padding-top: 80px;
+  min-height: 267px;
+}
+
+
+.about-text-main-container h3{
+font-size: 30px; 
+}
+
+
+.about-text-main-container p{
+ font-size: 20px; 
+}
+
+
+.services-text h3{
+font-size: 30px; 
+}
+
+
+.services-text p{
+ font-size: 20px; 
 }
 
 
@@ -202,39 +227,72 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 }
 
 .line-1-2{
-	position: absolute;
-	width: 2px;
-	height: 660px;
-	background-color: #FFF;
-	opacity: 0.3;
-	right: 585px;
-	-webkit-transform: rotate(64deg); 
-    -moz-transform: rotate(64deg);
-    top: 172px;
+   background-color: #fff;
+    height: 636px;
+    opacity: 0.3;
+    position: absolute;
+    right: 583px;
+    top: 157px;
+    transform: rotate(70deg);
+      -webkit-transform: rotate(70deg); 
+    -moz-transform: rotate(70deg);
+    width: 2px;
 }
 
 .line-2-3{
-	position:absolute;
-	width: 2px;
-	height: 635px;
-	background-color: #FFF;
-	opacity: 0.3;
-	right: 585px;
-	-webkit-transform: rotate(111deg); 
+  background-color: #fff;
+    height: 635px;
+    opacity: 0.3;
+    position: absolute;
+    right: 583px;
+    top: 420px;
+    transform: rotate(111deg);     
+   -webkit-transform: rotate(111deg); 
     -moz-transform: rotate(111deg);
-    top: 480px;
+    width: 2px;
 }
 .line-3-4{
-	position: absolute;
-	width: 2px;
-	height: 660px;
-	background-color: #FFF;
-	opacity: 0.3;
-	right: 587px;
-	-webkit-transform: rotate(64deg); 
-    -moz-transform: rotate(64deg);
-    top: 760px;
+   background-color: #fff;
+    height: 636px;
+    opacity: 0.3;
+    position: absolute;
+    right: 583px;
+    top: 692px;
+    transform: rotate(70deg);
+      -webkit-transform: rotate(70deg); 
+    -moz-transform: rotate(70deg);
+    width: 2px;
 }
+
+
+.line-4-5{
+  background-color: #fff;
+    height: 635px;
+    opacity: 0.3;
+    position: absolute;
+    right: 583px;
+    top: 954px;
+    transform: rotate(111deg);     
+   -webkit-transform: rotate(111deg); 
+    -moz-transform: rotate(111deg);
+    width: 2px;
+}
+
+
+.line-5-6{
+ background-color: #fff;
+    height: 423px;
+    opacity: 0.3;
+    position: absolute;
+    right: 432px;
+    top: 1364px;
+    transform: rotate(42deg);
+    -webkit-transform: rotate(42deg); 
+    -moz-transform: rotate(42deg);
+    width: 2px;
+}
+
+
 /* portfolio */
 .portfolio-sintezs{
 	overflow: scroll;
@@ -542,6 +600,11 @@ fieldset{
 }
 
 /* wheel */
+
+.container-wheel-move{
+  margin-left: -90px;
+  margin-right: 90px;
+}
 
 
 .pieContainer {
