@@ -8,6 +8,13 @@ body{
   background-size: cover;
 }
 
+.about{  
+  background: url('../img/aboutbg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
 a:hover{text-decoration: none;}
 p{color: #DCDCDC;}
 h1{color: #FFF;}
@@ -220,6 +227,16 @@ font-size: 30px;
 	margin: 100px auto 0;
 }
 
+.circle-with-number-six{
+   border: medium solid #fff;
+    border-radius: 50%;
+    height: 100px;
+    margin: 71px auto 0;
+    opacity: 0.5;
+    text-align: center;
+    width: 100px;
+}
+
 .circle-with-number h1{
 		font-size: 45px;
 	color: white;
@@ -393,36 +410,34 @@ fieldset{
 .button{
 	    /* display: inline-block; */
     width: auto;
-    background-color: #1990b2;
+    background-color: #;
     color: white;
     text-transform: uppercase;
     padding: 7px 10px;
-    border: 0;
+    border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 3px;
     -webkit-transition: background-color 0.2s ease-in-out;
     float: right;
-    margin-right: 10px;
 }
 
-.button-mote{
+.button-more{
      width: auto;
-    background-color: #1990b2;
+    border: 2px solid rgba(255, 255, 255, .5);
     color: white;
     text-transform: uppercase;
     padding: 7px 10px;
-    border: 0;
     border-radius: 3px;
     -webkit-transition: background-color 0.2s ease-in-out;
     float: left;
-    margin-left: 10px;
-}
-
 }
 
 /* contact */
 .contact-footer{
 	padding: 25px;
 }
+
+.form-group{}
+
 
 /* © sintezis */
 .footer-sintezis{
