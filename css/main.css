@@ -15,7 +15,13 @@ body{
   -o-background-size: cover;
   background-size: cover;}
 
-a:hover{text-decoration: none;}
+a:hover{
+  text-decoration: none; 
+  color: white;
+  border-color: #1990b2;
+}
+
+
 p{color: #DCDCDC;}
 h1{color: #FFF;}
 h2{color: #FFF;}
@@ -428,6 +434,11 @@ footer{
     right: 240px;
     top: -98px;
     width: 2px;
+}
+
+.contact-field-position{
+  float: right;
+  color: white;
 }
 
 fieldset{
