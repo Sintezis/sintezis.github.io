@@ -54,20 +54,20 @@ $('a').click(function(){
 
 	/* changing circle picture and rotation PERSON 1 */
       $( ".person-1-pic" ).click(function() {
-		  $(".pieContainer").removeClass("pieContainer-move-2 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-1");
+		  $(".pieContainer").removeClass("pieContainer-move-2 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-1");
 		 	 $(".sintezis-circle-img").fadeOut(500, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic1.png)').fadeIn(500);
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/sintezis-circle.png)').fadeIn(500);
     		});
 	/* changing text about  */
         	$(".positon-text-about").addClass('show-hide-text-about');
-        	$(".person-1-text-about").removeClass('show-hide-text-about');
+        	$(".sintezis-text-about").removeClass('show-hide-text-about');
 });
 
 	/* changing circle picture and rotation  PERSON 2 */
        $( ".person-2-pic" ).click(function() {
-       	$(".pieContainer").removeClass("pieContainer-move-1 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-2");
+       	$(".pieContainer").removeClass("pieContainer-move-1 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-2");
        		$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic2.png)').fadeIn(400);
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/simun.png)').fadeIn(400);
     		});
    	/* changing text about */
         	$(".positon-text-about").addClass('show-hide-text-about');
@@ -76,9 +76,9 @@ $('a').click(function(){
 
 	/* changing circle picture and rotation PERSON 3 */
        $( ".person-3-pic" ).click(function() {
-       	$(".pieContainer").removeClass("pieContainer-move-3 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-3");
+       	$(".pieContainer").removeClass("pieContainer-move-3 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-3");
        		$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic3.png)').fadeIn(400);
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/sonja.png)').fadeIn(400);
     		});
 	/* changing text about */
     		$(".positon-text-about").addClass('show-hide-text-about');
@@ -87,9 +87,9 @@ $('a').click(function(){
 });
 	/* changing circle picture and rotation PERSON 4 */
         $( ".person-4-pic" ).click(function() {
-        	$(".pieContainer").removeClass("pieContainer-move-4 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-4");
+        	$(".pieContainer").removeClass("pieContainer-move-4 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-4");
   				$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic4.png)').fadeIn(400);
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/tom.png)').fadeIn(400);
     		});
 	/* changing text about */
   			$(".positon-text-about").addClass('show-hide-text-about');
@@ -98,9 +98,9 @@ $('a').click(function(){
 
 	/* changing circle picture and rotation  PERSON 5*/
         $( ".person-5-pic" ).click(function() {
-        	$(".pieContainer").removeClass("pieContainer-move-5 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-5");
+        	$(".pieContainer").removeClass("pieContainer-move-5 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-5");
 				$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic5.png)').fadeIn(400);
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/you.png)').fadeIn(400);
     		});		
 	/* changing text about */
     		$(".positon-text-about").addClass('show-hide-text-about');
@@ -109,9 +109,9 @@ $('a').click(function(){
 
     /* changing circle picture and rotation PERSON 6*/
         $( ".person-6-pic" ).click(function() {
-        	$(".pieContainer").removeClass("pieContainer-move-6 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-6");
+        	$(".pieContainer").removeClass("pieContainer-move-6 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-6");
 				$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic6.png)').fadeIn(400);
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/goran.png)').fadeIn(400);
     		});	
 	/* changing text about */
 			$(".positon-text-about").addClass('show-hide-text-about');
@@ -120,14 +120,25 @@ $('a').click(function(){
 
     /* changing circle picture and rotation  PERSON 7*/
         $( ".person-7-pic" ).click(function() {
-        	$(".pieContainer").removeClass("pieContainer-move-7 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-7");
+        	$(".pieContainer").removeClass("pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6  pieContainer-move-8").addClass("pieContainer-move-7");
  				$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/pic7.png)').fadeIn(400);
+        	 $(".sintezis-circle-img").css('background-image','url(img/team/andrej.png)').fadeIn(400);
     		});		
 	/* changing text about */
     		$(".positon-text-about").addClass('show-hide-text-about');
         	$(".person-7-text-about").removeClass('show-hide-text-about');	
 });
+
+                $( ".person-8-pic" ).click(function() {
+            $(".pieContainer").removeClass("pieContainer-move-7 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-8");
+                $(".sintezis-circle-img").fadeOut(400, function() {
+             $(".sintezis-circle-img").css('background-image','url(img/team/koza.png)').fadeIn(400);
+            });     
+    /* changing text about */
+            $(".positon-text-about").addClass('show-hide-text-about');
+            $(".person-8-text-about").removeClass('show-hide-text-about');  
+});
+
 
 
 
