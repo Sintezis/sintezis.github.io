@@ -15,7 +15,13 @@ body{
   -o-background-size: cover;
   background-size: cover;}
 
-a:hover{text-decoration: none;}
+
+a:hover{
+  text-decoration: none; 
+  color: white;
+  border-color: #1990b2;
+}
+
 p{color: #DCDCDC;}
 h1{color: #FFF;}
 h2{color: #FFF;}
@@ -398,10 +404,41 @@ footer{
 }
 .contact-footer{
 	text-align: center;
+    padding: 25px;
+  margin-top: -80px;
+}
+
+.contact-container{
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 5%;
+  text-align: center;
+  padding-bottom: 25px;
+  display: none;
+  opacity: 0;
+
+}
+
+.contact-container-animated{
+  display: initial;
 }
 
 .contact-form{
 	margin: 0 auto;
+}
+
+.line-6-contact{
+    background-color: #fff;
+    height: 97px;
+    opacity: 0.3;
+    position: absolute;
+    right: 240px;
+    top: -98px;
+    width: 2px;
+}
+
+.contact-field-position{
+  float: right;
+  color: white;
 }
 
 fieldset{
@@ -431,10 +468,11 @@ fieldset{
     float: left;
 }
 
-/* contact */
-.contact-footer{
-	padding: 25px;
+#contact-button{
+  cursor: pointer;
 }
+
+
 
 .form-group{}
 

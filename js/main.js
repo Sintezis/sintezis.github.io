@@ -39,13 +39,20 @@ $(document).ready(function(){
 
 /* smood scroll */
 
-$('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
+    $(document).ready(function(){
 
+      $("a").on('click', function(event) { 
+        if (this.hash !== "") {     
+          event.preventDefault();  
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        } 
+      });
+    });
 
 
 
@@ -142,6 +149,10 @@ $('a').click(function(){
 
 
 
+    $("#contact-button").click(function(){
+           $('.contact-container').addClass('contact-container-animated');
+           $('.contact-container').animate({opacity: '1'}, 1000);   
+    });
 
 
 });
