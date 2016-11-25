@@ -6,6 +6,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .about{  
@@ -431,7 +432,7 @@ footer{
     height: 97px;
     opacity: 0.3;
     position: absolute;
-    right: 240px;
+    right: 257px;
     top: -98px;
     width: 2px;
 }
@@ -834,6 +835,11 @@ fieldset{
   transition: 2s;
 
 }
+.menu-close-bg{
+    height: 100%;
+    margin-left: -35px;
+    width: 100%;
+}
 
 /* navigation bar about page */ 
 
@@ -855,6 +861,9 @@ fieldset{
 .contact-container{
   border:none;
   }
+.positon-text-about{
+  position: relative;
+}
 
 
 }
@@ -897,20 +906,22 @@ fieldset{
 }
 
 .line-6-contact {
-    right: 199px;
+    right: 215px;
  }
 
 .services-text {
     padding: 60px 25px 25px;
 }
+ 
+.positon-text-about{
+  position: relative;
+}
 
-
-  
 }
 
 
 @media (max-width: 525px) {
-.navigation-bar {
+.navigation-bar , .navigation-bar-about{
     height: 143px;
 }
 
@@ -918,5 +929,30 @@ fieldset{
   top: -55px;
 }
 
+.positon-text-about{
+  position: relative;
+}
 
+
+}
+
+@media (max-width: 365px) {
+.mobile-menu-icon {
+  top: -95px;
+}
+
+
+}
+.img-container-about-sm{
+  text-align: center;
+}
+
+.img-about{
+  margin-top: 50px;
+  border-radius: 50%;
+  max-width: 50%; 
+}
+
+.sintezis-text-about-sm{
+  padding-top: 90px;
 }

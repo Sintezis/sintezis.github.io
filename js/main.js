@@ -23,6 +23,17 @@ $(document).ready(function(){
 	c.on("click",function(){$(this);d()
 	})
 
+  $('.menu-close-bg').on("click", function(){
+    a.toggleClass("active"),
+    b.toggleClass("active")});
+  var d=function(){a.removeClass("active"),
+  b.removeClass("active")};
+  c.on("click",function(){$(this);d()
+  })
+
+
+
+
 
 /* navibar */
 
