@@ -847,3 +847,76 @@ fieldset{
    position: fixed;
    opacity: 1;
 }
+
+
+/*  MOBIEL - TABLET */
+@media (max-width: 992px) {
+
+.contact-container{
+  border:none;
+  }
+
+
+}
+
+
+  @media (max-width: 1200px) {
+.line-5-6 {
+    height: 541px;
+    right: 488px;
+    top: 1278px;
+    transform: rotate(62deg);
+}
+
+.line-4-5 {
+    height: 526px;
+    right: 485px;
+    top: 1013px;
+    transform: rotate(115deg);
+}
+
+.line-3-4 {
+    height: 527px;
+    right: 485px;
+    top: 743px;
+    transform: rotate(66deg);
+}
+
+.line-2-3 {
+    height: 526px;
+    right: 482px;
+    top: 474px;
+    transform: rotate(114deg);
+}
+
+.line-1-2 {
+    height: 526px;
+    right: 486px;
+    top: 206px;
+    transform: rotate(65deg);
+}
+
+.line-6-contact {
+    right: 199px;
+ }
+
+.services-text {
+    padding: 60px 25px 25px;
+}
+
+
+  
+}
+
+
+@media (max-width: 525px) {
+.navigation-bar {
+    height: 143px;
+}
+
+.mobile-menu-icon {
+  top: -55px;
+}
+
+
+}
