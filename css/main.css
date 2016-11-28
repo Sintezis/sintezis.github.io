@@ -14,7 +14,9 @@ body{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;}
+  background-size: cover;
+  overflow: hidden;
+}
 
 
 a:hover{
@@ -677,11 +679,10 @@ fieldset{
 
 
 .pieContainer {
-    height: 602px;
+    height: 420px;
     position: relative;
     transform-origin: center center 0;
     transition: all 1s ease 0s;
-    width: 690px;
 }
 .pieContainer-move-1{
  transform: rotate(0deg;);
@@ -785,14 +786,14 @@ fieldset{
 
 .central-wheel-picture{
    border-radius: 50%;
-    height: 300px;
-    left: 190px;
-    margin-top: 150px;
+    height: 210px;
+    left: 180px;
+    margin-top: 105px;
     position: absolute;
-    width: 300px;
+    width: 210px;
     z-index: 10;
     background-image: url('../img/team/sintezis-circle.png');
-  
+    background-position: center; 
 
 }
 
@@ -802,14 +803,12 @@ fieldset{
     z-index: 8;
     border-radius: 50%;
     background-image: url('../img/team/sintezis-circle.png');
-    height: 300px;
-    width: 300px;
+    height: 210px;
+    width: 210px;
+    background-position: center; 
 
 }
 .container-wheel{ 
-    height: 605px;
-    margin-left: -28px;
-    width: 686px;
 }
 
 .aboutus-main-container{
@@ -865,6 +864,9 @@ fieldset{
   position: relative;
 }
 
+.uil-ring-css {
+    left: 38%;
+}
 
 }
 
@@ -917,6 +919,10 @@ fieldset{
   position: relative;
 }
 
+.about{  
+  overflow: visible;
+}
+
 }
 
 
@@ -933,6 +939,9 @@ fieldset{
   position: relative;
 }
 
+.uil-ring-css {
+    left: 28%;
+}
 
 }
 
