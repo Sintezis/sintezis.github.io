@@ -193,15 +193,19 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 	padding-bottom: 50px;
 }
 
+.main-title h4 {
+  color: white;
+}
+
 .services-text{
 	padding: 25px;
-	padding-top: 80px;
+	padding-top: 40px;
 	min-height: 267px;
 
 }
 .about-text-main-container{
-    padding: 15px;
-  padding-top: 31px;
+  padding: 15px;
+  padding-top: 0px;
   min-height: 267px;
 }
 
@@ -233,21 +237,22 @@ font-size: 30px;
 	border: solid medium #FFF;
 	opacity: 0.5;
 	text-align: center;
-	margin: 100px auto 0;
+	margin-top: 65px;
+  margin-left: 180px
 }
 
 .circle-with-number-six{
    border: medium solid #fff;
     border-radius: 50%;
     height: 100px;
-    margin: 71px auto 0;
+    /*margin: 71px auto 0;*/
     opacity: 0.5;
     text-align: center;
     width: 100px;
 }
 
 .circle-with-number h1{
-		font-size: 45px;
+	font-size: 45px;
 	color: white;
 
 }
@@ -258,7 +263,7 @@ font-size: 30px;
     opacity: 0.3;
     position: absolute;
     right: 583px;
-    top: 157px;
+    top: 273px;
     transform: rotate(70deg);
       -webkit-transform: rotate(70deg); 
     -moz-transform: rotate(70deg);
@@ -271,7 +276,7 @@ font-size: 30px;
     opacity: 0.3;
     position: absolute;
     right: 583px;
-    top: 420px;
+    top: 541px;
     transform: rotate(111deg);     
    -webkit-transform: rotate(111deg); 
     -moz-transform: rotate(111deg);
@@ -283,7 +288,7 @@ font-size: 30px;
     opacity: 0.3;
     position: absolute;
     right: 583px;
-    top: 692px;
+    top: 805px;
     transform: rotate(70deg);
       -webkit-transform: rotate(70deg); 
     -moz-transform: rotate(70deg);
@@ -297,7 +302,7 @@ font-size: 30px;
     opacity: 0.3;
     position: absolute;
     right: 583px;
-    top: 954px;
+    top: 1075px;
     transform: rotate(111deg);     
    -webkit-transform: rotate(111deg); 
     -moz-transform: rotate(111deg);
@@ -311,7 +316,7 @@ font-size: 30px;
     opacity: 0.3;
     position: absolute;
     right: 583px;
-  top: 1226px;
+  top: 1341px;
     transform: rotate(70deg);
       -webkit-transform: rotate(70deg); 
     -moz-transform: rotate(70deg);
@@ -431,17 +436,18 @@ footer{
 
 .line-6-contact{
     background-color: #fff;
-    height: 97px;
+    height: 105px;
     opacity: 0.3;
     position: absolute;
     right: 257px;
-    top: -98px;
+    top: -105px;
     width: 2px;
 }
 
 .contact-field-position{
   float: left;
   color: white;
+  padding-top: 20px;
 }
 
 fieldset{
