@@ -1,15 +1,111 @@
+/* Formated classes, following google style guide https://google.github.io/styleguide/htmlcssguide.xml */
 
 /* main CSS */
-body{ 
+
+/* elements styles */
+
+body { 
   background: url('../img/SintezisBg.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   overflow-x: hidden;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
 }
 
-.about{  
+a:hover { 
+  border-color: #1990b2; 
+  color: white; 
+  text-decoration: none; 
+}
+
+p { 
+  color: #DCDCDC; 
+}
+h1 { 
+  color: #fff; 
+}
+
+h2 {
+ color: #fff; 
+}
+
+h3 { 
+  color: #1990b2; 
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+/* 
+SINTEZIS classes basic style
+use snt- (sintezis)prefix, eg:; .snt-main-content 
+*/
+
+/* landing screen layout, video title in full screen, image title on mobile */
+
+.snt-title-container{
+  /*text-align: center;*/
+  font-weight: bold;
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+
+.snt-title-container h1 {
+  text-align: center;
+}
+
+.snt-title-container h2 {
+  text-align: center;
+}
+
+.snt-title-container h4 {
+  color: #fff;
+}
+
+/* video title container */
+.snt-video-md-container { 
+  background-color: black; 
+  height: 100vh; 
+  margin: 0 auto;
+}
+
+/* image title container */
+.snt-img-xs-container {
+
+}
+
+/*mobile title img*/
+.snt-title-img { 
+  width: 100%;
+}
+
+.snt-arrow-down { 
+  margin: 0 auto; 
+  position: relative; 
+  text-align: center;
+}
+
+.snt-arrow-down-png {
+  margin-top: -100px;
+  position: relative;  
+}
+
+.snt-nav-bar { 
+  background-color: #000;
+  display: none;
+  height: 80px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  transition: opacity .25s ease-in;
+  width: 100%;
+  z-index: 100;
+  -moz-transition: opacity .25s ease-in;
+  -webkit-transition: opacity .25s ease-in;
+}
+
+/*Formatted clases end*/
+
+.about {  
   background: url('../img/aboutbg.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,50 +114,23 @@ body{
   overflow: hidden;
 }
 
-
-a:hover{
-  text-decoration: none; 
-  color: white;
-  border-color: #1990b2;
-}
-
-p{color: #DCDCDC;}
-h1{color: #FFF;}
-h2{color: #FFF;}
-h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
-
-.clear{ clear: both;}
-
-.big-screens-first-page {height: 100vh; margin: 0 auto; background-color: black; }
-.small-screen-first-page{}
-.img-sintezis{ width: 100%;}
-
 /*  arrow - main screen */
-.arrow-down { position: relative; margin: 0 auto; text-align: center;}
-.arrow-down-png {position: relative;  margin-top: -100px;}
+
 
 /* main nav */
 .waypoint{
 	margin-top: -150px;
 	margin-bottom: 150px;
 }
-.navigation-bar{ 
-	margin: 0 auto;
-	 width: 100%;
-	 height: 80px;
-	 background-color:#000;
-	 z-index: 100;
-	 top: 0;
-	 position: fixed;
-	 opacity: 0;
-	 transition: opacity .25s ease-in;
-   -moz-transition: opacity .25s ease-in;
-   -webkit-transition: opacity .25s ease-in;
-}
-.navigation-bar-animate{
+
+.navigation-bar-animate {
 	opacity: 1;
 }
-.logo{float: left; margin-left: 20px; color: #FFF;}
+.snt-logo { 
+  float: left; 
+  margin-left: 20px; color: #FFF; 
+}
+
 .mobile-menu-icon{
 	float: right;
 	position:relative;
@@ -80,6 +149,7 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 	user-select:none;
 	-webkit-transition:border-color 0.2s ease-in-out;transition:border-color 0.2s ease-in-out
 }
+
 .mobile-menu-icon div{
 	position:absolute;
 	left:20%;right:20%;
@@ -88,10 +158,11 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 	background-color:white;
 	border:1px solid #000;
 	-webkit-transition:opacity 0.3s ease-in-out, visibility 0.3s ease-in-out,
-	 -webkit-transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
-	  border 0.3s ease-in-out;transition:opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, 
-	  transform 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out
-	}
+	-webkit-transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+	border 0.3s ease-in-out;transition:opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, 
+	transform 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out
+}
+
 .mobile-menu-icon div:nth-child(1){
 	top:30%;
 	-webkit-transform:rotate(0deg);
@@ -109,8 +180,8 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 	-ms-transform:translateY(0);
 	transform:translateY(0)
 }
-.mobile-menu-icon.active{border:2px solid white}
-.mobile-menu-icon.active div{border:0;background-color:#1990b2}
+.mobile-menu-icon.active { border:2px solid white }
+.mobile-menu-icon.active div { border:0;background-color:#1990b2 }
 .mobile-menu-icon.active div:nth-child(1){-webkit-transform:rotate(40deg);-ms-transform:rotate(40deg);transform:rotate(40deg);top:47%}
 .mobile-menu-icon.active div:nth-child(2){-webkit-transform:rotate(-40deg);-ms-transform:rotate(-40deg);transform:rotate(-40deg);top:47%}
 .mobile-menu-icon.active div:nth-child(3){-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px);opacity:0;visibility:hidden}
@@ -185,12 +256,6 @@ h3{ color: #1990b2; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);}
 /* services */
 .services-container{ 
 	position: relative;
-}
-.main-title{
-	padding-top: 70px;
-	text-align: center;
-	font-weight: bold;
-	padding-bottom: 50px;
 }
 
 .main-title h4 {
@@ -272,16 +337,17 @@ font-size: 30px;
 
 .line-2-3{
   background-color: #fff;
-    height: 635px;
-    opacity: 0.3;
-    position: absolute;
-    right: 583px;
-    top: 541px;
-    transform: rotate(111deg);     
-   -webkit-transform: rotate(111deg); 
-    -moz-transform: rotate(111deg);
-    width: 2px;
+  height: 635px;
+  opacity: 0.3;
+  position: absolute;
+  right: 583px;
+  top: 541px;
+  transform: rotate(111deg);     
+  -webkit-transform: rotate(111deg); 
+  -moz-transform: rotate(111deg);
+  width: 2px;
 }
+
 .line-3-4{
    background-color: #fff;
     height: 636px;
@@ -371,6 +437,7 @@ font-size: 30px;
 .text-portfolio{
 padding: 10px 10px 0px 15px;	
 }
+
 /* scrollbar */
 
 .portfolio-sintezs::-webkit-scrollbar {
@@ -436,11 +503,11 @@ footer{
 
 .line-6-contact{
     background-color: #fff;
-    height: 105px;
+    height: 108px;
     opacity: 0.3;
     position: absolute;
     right: 257px;
-    top: -105px;
+    top: -108px;
     width: 2px;
 }
 
@@ -456,7 +523,7 @@ fieldset{
 .button{
 	    /* display: inline-block; */
     width: auto;
-    background-color: #;
+    background-color: black;
     color: white;
     text-transform: uppercase;
     padding: 7px 10px;
@@ -838,6 +905,7 @@ fieldset{
   padding-top: 50px;
   position: absolute;
   transition: 2s;
+  font-size: 18px;
 
 }
 .menu-close-bg{
@@ -907,10 +975,10 @@ fieldset{
 }
 
 .line-1-2 {
-    height: 526px;
-    right: 486px;
-    top: 206px;
-    transform: rotate(65deg);
+  height: 526px;
+  right: 486px;
+  top: 206px;
+  transform: rotate(65deg);
 }
 
 .line-6-contact {
@@ -933,31 +1001,29 @@ fieldset{
 
 
 @media (max-width: 525px) {
-.navigation-bar , .navigation-bar-about{
-    height: 143px;
-}
+  .navigation-bar , .navigation-bar-about{
+  height: 143px;
+  }
 
-.mobile-menu-icon {
-  top: -55px;
-}
+  .mobile-menu-icon {
+    top: -55px;
+  }
 
-.positon-text-about{
-  position: relative;
-}
+  .positon-text-about{
+    position: relative;
+  }
 
-.uil-ring-css {
+  .uil-ring-css {
     left: 28%;
-}
-
+  }
 }
 
 @media (max-width: 365px) {
-.mobile-menu-icon {
-  top: -95px;
+  .mobile-menu-icon {
+    top: -95px;
+  }
 }
 
-
-}
 .img-container-about-sm{
   text-align: center;
 }

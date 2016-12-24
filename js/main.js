@@ -1,52 +1,77 @@
 /* menu */
-
-
 /* preload */
 	$(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
 
+// Preload of what ???
+
 
 /* menu on navbar */
+$(document).ready(function() {
+//where does this close???
 
-$(document).ready(function(){
+	var  
+    a = $(".mobile-menu-icon"),
+    b = $(".mobile-menu"),
+    c = ($("body"), $(".mobile-menu a"));
 
-	var a=$(".mobile-menu-icon"),
-	b=$(".mobile-menu"),
-	c=($("body"),
-	$(".mobile-menu a"));
-	a.on("click",function(){a.toggleClass("active"),
-		b.toggleClass("active")});
-	var d=function(){a.removeClass("active"),
-	b.removeClass("active")};
-	c.on("click",function(){$(this);d()
+	a.on("click", function() {
+    a.toggleClass("active")
+		b.toggleClass("active")
+  });
+	
+  var d = function() { 
+    a.removeClass("active")
+    b.removeClass("active")
+  };
+  
+  c.on("click", function(){
+    $(this);
+    d()
 	})
 
-  $('.menu-close-bg').on("click", function(){
+  $('.menu-close-bg').on("click", function() {
     a.toggleClass("active"),
-    b.toggleClass("active")});
-  var d=function(){a.removeClass("active"),
-  b.removeClass("active")};
-  c.on("click",function(){$(this);d()
+    b.toggleClass("active")
+  });
+  
+  var d = function() {
+    a.removeClass("active"),
+    b.removeClass("active")
+  };
+  
+  c.on("click", function() {
+    $(this);
+    d()
   })
 
-
-
+// This is very nice and informative code 
+// Format was aaaamazing -.-
 
 
 /* navibar */
 
-    var waypoint = $(".waypoint").offset().top;
+var waypointOffset = $(".waypoint").offset().top;
 
- $(window).scroll(function () { 
-        if ($(document).scrollTop() > waypoint ) { 
-            $(".navigation-bar").addClass("navigation-bar-animate")
-        } else {
-            $(".navigation-bar").removeClass("navigation-bar-animate")
-        }
-    });
+// hide the logo section when on landing section
+window.onscroll = function(event) {
+  if ($(document).scrollTop() > waypointOffset) {
+    $('.snt-logo').fadeIn()
+  }
+  else {
+    $('.snt-logo').fadeOut()
+  }
+}
 
+$(window).scroll( function () { 
+  if ($(document).scrollTop() > waypointOffset) { 
+    $(".snt-nav-bar").show()
+  } else {
+    $(".snt-nav-bar").hide()
+  }
+});
 
 /* smood scroll */
   $(function() {
