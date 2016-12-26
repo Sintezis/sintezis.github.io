@@ -1,193 +1,141 @@
 /* menu */
 /* preload */
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
+
+$(window).load(function() {
+	// Animate loader off screen
+	$(".se-pre-con").fadeOut("slow");;
+});
 
 // Preload of what ???
 
-
-/* menu on navbar */
+// SIMUN
 $(document).ready(function() {
-//where does this close???
-
-	var  
-    a = $(".mobile-menu-icon"),
-    b = $(".mobile-menu"),
-    c = ($("body"), $(".mobile-menu a"));
-
-	a.on("click", function() {
-    a.toggleClass("active")
-		b.toggleClass("active")
-  });
-	
-  var d = function() { 
-    a.removeClass("active")
-    b.removeClass("active")
-  };
   
-  c.on("click", function(){
-    $(this);
-    d()
-	})
+  // GLOBAL
 
-  $('.menu-close-bg').on("click", function() {
-    a.toggleClass("active"),
-    b.toggleClass("active")
-  });
-  
-  var d = function() {
-    a.removeClass("active"),
-    b.removeClass("active")
-  };
-  
-  c.on("click", function() {
-    $(this);
-    d()
-  })
+  //nav bar representation
+  //check for way point on loaded page
+  if ($(".snt-waypoint").length > 0) {
 
-// This is very nice and informative code 
-// Format was aaaamazing -.-
+    var waypointOffset = $(".snt-waypoint").offset().top;
 
+    // hide the logo placeholder and title when on landing section
+    window.onscroll = function(event) {
+      if ($(document).scrollTop() > waypointOffset) {
+        $('.snt-logo').fadeIn()
+      }
+      else {
+        $('.snt-logo').fadeOut()
+      }
+    }
 
-/* navibar */
-
-var waypointOffset = $(".waypoint").offset().top;
-
-// hide the logo section when on landing section
-window.onscroll = function(event) {
-  if ($(document).scrollTop() > waypointOffset) {
-    $('.snt-logo').fadeIn()
+    // hide nav bar for new user, display it on scroll to content section
+    $(window).scroll( function () { 
+      if ($(document).scrollTop() > waypointOffset) { 
+        $(".snt-nav-bar").show()
+      } else {
+        $(".snt-nav-bar").hide()
+      }
+    });  
   }
   else {
-    $('.snt-logo').fadeOut()
-  }
-}
-
-$(window).scroll( function () { 
-  if ($(document).scrollTop() > waypointOffset) { 
     $(".snt-nav-bar").show()
-  } else {
-    $(".snt-nav-bar").hide()
+    $('.snt-logo').fadeIn()
   }
-});
 
-/* smood scroll */
+  //toggle menu and icon by appending and removing active class, check main.css for reference
+  var toggleMenu = function() {
+    $(".snt-menu-icon").toggleClass("active")
+    $(".snt-menu-container").toggleClass("active")
+  }
+
+  // open close menu via menu icon
+  $(".snt-menu-icon").click(function() {
+    toggleMenu()
+  })
+
+  // close menu via body click
+  $(".snt-menu-container").click(function() {
+    toggleMenu()
+  })
+
+  // HOME PAGE
+
+  $("#contact-button").click(function(){
+    console.log("Contact")
+    $('.snt-contact-form-container').show()
+    $('.snt-contact-form-container').animate({opacity: '1'}, 1000);
+    $('html, body').animate({scrollTop: $("#contact-button").offset().top}, 200);
+
+  });
+
+  // ABOUT PAGE
+
+  // about us wheel menu
+  var numberOfSections = 8
+  var imgPaths = [
+    "sintezis-circle.png",
+    "simun.png",
+    "sonja.png",
+    "tom.png",
+    "you.png",
+    "goran.png",
+    "andrej.png",
+    "koza.png"
+  ]
+
+  //set pictures rotation programaticlly
+  for (var i = 0; i < numberOfSections; i++) {
+    var offset = (360 / numberOfSections) * i
+    var sectionIndex = i + 1
+    $(".snt-pie-section[pie-section='" + sectionIndex + "']").css({'transform' : 'rotate('+ offset +'deg)'})
+  }
+  
+  //rotate the wheel to the right degree
+  $(".snt-pie-section").click(function() {
+    var sectionIndex = $(this).attr("pie-section") - 1 // we need index ranging from 0, to get the right section offset in deg
+    var sectionOffsetDeg = (360 / numberOfSections) * sectionIndex
+
+    //rotate 
+    $('.snt-pie-wheel-container').css({'transform' : 'rotate(-'+ sectionOffsetDeg +'deg)'});
+
+    //load image
+    $('.snt-wheel-display').fadeOut(500, function() {
+      $(".snt-wheel-display").css('background-image','url(img/team/'+ imgPaths[sectionIndex] +')').fadeIn(500);
+    })
+
+    //load data
+    $.getJSON("js/team_data.json", function(teamData){
+      var title = teamData[sectionIndex].title
+      var description = teamData[sectionIndex].description
+
+      $(".snt-abount-content-container h1").text(title)
+      $(".snt-about-content").html(description)
+    })
+  })
+
+
+  // SANTEK
+  /* smood scroll */
   $(function() {
+    
     $('a[href*="#"]:not([href="#"])').click(function() {
+      
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      
         if (target.length) {
           $('html, body').animate({
             scrollTop: target.offset().top
           }, 1000);
+
           return false;
         }
       }
     });
   });
-
-
-/* about us */
-
-
-	/* changing circle picture and rotation PERSON 1 */
-      $( ".person-1-pic" ).click(function() {
-		  $(".pieContainer").removeClass("pieContainer-move-2 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-1");
-		 	 $(".sintezis-circle-img").fadeOut(500, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/sintezis-circle.png)').fadeIn(500);
-    		});
-	/* changing text about  */
-        	$(".positon-text-about").addClass('show-hide-text-about');
-        	$(".sintezis-text-about").removeClass('show-hide-text-about');
-});
-
-	/* changing circle picture and rotation  PERSON 2 */
-       $( ".person-2-pic" ).click(function() {
-       	$(".pieContainer").removeClass("pieContainer-move-1 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-2");
-       		$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/simun.png)').fadeIn(400);
-    		});
-   	/* changing text about */
-        	$(".positon-text-about").addClass('show-hide-text-about');
-        	$(".person-2-text-about").removeClass('show-hide-text-about'); 	
-});	
-
-	/* changing circle picture and rotation PERSON 3 */
-       $( ".person-3-pic" ).click(function() {
-       	$(".pieContainer").removeClass("pieContainer-move-3 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-3");
-       		$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/sonja.png)').fadeIn(400);
-    		});
-	/* changing text about */
-    		$(".positon-text-about").addClass('show-hide-text-about');
-        	$(".person-3-text-about").removeClass('show-hide-text-about');
-    		
-});
-	/* changing circle picture and rotation PERSON 4 */
-        $( ".person-4-pic" ).click(function() {
-        	$(".pieContainer").removeClass("pieContainer-move-4 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-4");
-  				$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/tom.png)').fadeIn(400);
-    		});
-	/* changing text about */
-  			$(".positon-text-about").addClass('show-hide-text-about');
-        	$(".person-4-text-about").removeClass('show-hide-text-about');
-});
-
-	/* changing circle picture and rotation  PERSON 5*/
-        $( ".person-5-pic" ).click(function() {
-        	$(".pieContainer").removeClass("pieContainer-move-5 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-5");
-				$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/you.png)').fadeIn(400);
-    		});		
-	/* changing text about */
-    		$(".positon-text-about").addClass('show-hide-text-about');
-        	$(".person-5-text-about").removeClass('show-hide-text-about');
-});
-
-    /* changing circle picture and rotation PERSON 6*/
-        $( ".person-6-pic" ).click(function() {
-        	$(".pieContainer").removeClass("pieContainer-move-6 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7 pieContainer-move-8").addClass("pieContainer-move-6");
-				$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/goran.png)').fadeIn(400);
-    		});	
-	/* changing text about */
-			$(".positon-text-about").addClass('show-hide-text-about');
-        	$(".person-6-text-about").removeClass('show-hide-text-about');
-});
-
-    /* changing circle picture and rotation  PERSON 7*/
-        $( ".person-7-pic" ).click(function() {
-        	$(".pieContainer").removeClass("pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6  pieContainer-move-8").addClass("pieContainer-move-7");
- 				$(".sintezis-circle-img").fadeOut(400, function() {
-        	 $(".sintezis-circle-img").css('background-image','url(img/team/andrej.png)').fadeIn(400);
-    		});		
-	/* changing text about */
-    		$(".positon-text-about").addClass('show-hide-text-about');
-        	$(".person-7-text-about").removeClass('show-hide-text-about');	
-});
-
-                $( ".person-8-pic" ).click(function() {
-            $(".pieContainer").removeClass("pieContainer-move-7 pieContainer-move-3 pieContainer-move-4 pieContainer-move-5 pieContainer-move-6 pieContainer-move-7").addClass("pieContainer-move-8");
-                $(".sintezis-circle-img").fadeOut(400, function() {
-             $(".sintezis-circle-img").css('background-image','url(img/team/koza.png)').fadeIn(400);
-            });     
-    /* changing text about */
-            $(".positon-text-about").addClass('show-hide-text-about');
-            $(".person-8-text-about").removeClass('show-hide-text-about');  
-});
-
-
-
-
-    $("#contact-button").click(function(){
-           $('.contact-container').addClass('contact-container-animated');
-           $('.contact-container').animate({opacity: '1'}, 1000);   
-    });
-
 
 });
 
