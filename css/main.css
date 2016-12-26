@@ -484,9 +484,9 @@ h3 {
 
   /*load bg for mobile*/
   .snt-home-body-bg {
-    background: url('../img/home-bg-mobile.jpg');
+    background: url('../img/home-bg-mobile.jpg') no-repeat center center fixed; 
   }
-
+  
   /*home page remove arrow down*/
   .snt-arrow-down {
     display: none;
@@ -512,7 +512,7 @@ h3 {
   }
 
   .snt-home-body-bg {
-    background: url('../img/home-bg-mobile.jpg'); 
+    background: url('../img/home-bg-mobile.jpg') no-repeat center center fixed; 
   }
 }
 
