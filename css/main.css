@@ -482,6 +482,10 @@ h3 {
 
 @media (max-width: 525px) {
 
+  /*load bg for mobile*/
+  .snt-home-body-bg {
+    background: url('../img/home-bg-mobile.jpg') no-repeat center center fixed; 
+  }
   /*home page remove arrow down*/
   .snt-arrow-down {
     display: none;
