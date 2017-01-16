@@ -96,7 +96,7 @@ $(document).ready(function() {
     var sectionIndex = $(this).attr("pie-section") - 1 // we need index ranging from 0, to get the right section offset in deg
     var sectionOffsetDeg = (360 / numberOfSections) * sectionIndex
 
-    //rotate 
+    //rotate imge
     $('.snt-pie-wheel-container').css({'transform' : 'rotate(-'+ sectionOffsetDeg +'deg)'});
 
     //load image
