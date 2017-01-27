@@ -1,0 +1,11 @@
+.snt-title-white h4 {
+	color: white;
+}
+
+.snt-design-req-form ul li {
+	list-style: none;
+}
+
+.snt-dev-req-banner {
+	background-image: url("../img/development-header.jpg") !important;
+}
