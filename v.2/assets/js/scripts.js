@@ -332,6 +332,9 @@
          Toggle init
          ===============================================*/
         var allToggles = $(".toggle > dd").hide();
+
+        allToggles.first().slideDown("easeOutExpo")
+
         $(".toggle > dt > a").click(function () {
 
             if ($(this).hasClass("active")) {
