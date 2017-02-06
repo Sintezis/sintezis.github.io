@@ -1,0 +1,291 @@
+<!-- style guide rules 
+
+1. use tabs instead of spaces! 
+tab size: 2 
+
+2. css classes order eg.
+  <elm class="snt-custom-class bootstrap-class"></elm>
+
+3. write short comment explanations for elements and events,
+explain the code and keep it simple
+
+4. !!WARNING!! html, header, body and similar tags are omttied for a reason, not by accident!
+Checkout the following google style guide https://google.github.io/styleguide/htmlcssguide.xml
+
+style guide rules end -->
+
+<!doctype html>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<title>Sintezis</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- here we use body tag to add custom classes to it, no need to close it, or account it in tags hierarchy  -->
+<body class="snt-body-bg snt-home-body-bg">
+
+<!-- browser header: video title  -->
+<div class="snt-video-md-container hidden-xs"> 
+  <video  width="100%" height="100%" autoplay loop="loop">
+    <source src="video/video.mov" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- mobile header: picture title -->
+<div class="snt-img-xs-container visible-xs">
+  <img class="snt-home-title-img" src="img/sintezis.jpg">
+</div>
+
+<!-- Scroll down arrow -->
+<div class="snt-arrow-down">
+  <img class="snt-arrow-down-png" src="img/arrow.png"> 
+</div>
+
+<!-- nav menu  -->
+<div class="snt-nav-bar"> 
+  
+  <!-- logo placeholder -->  
+  <div class="snt-logo">
+    <h1>SINTEZIS</h1>
+  </div>
+  
+    <!-- menu icon -->
+  <div class="snt-menu-icon">
+    <div line="1"></div>
+    <div line="2"></div>
+    <div line="3"></div>
+  </div>
+
+  <!-- nav menu -->
+  <div class="snt-menu-container">
+   
+   <!-- close menu icon -->
+   <div class="snt-close-menu-icon"></div>
+    
+    <!-- menu links -->
+    <ul class="snt-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about_us.html">About us</a></li>
+      <li><a href="index.html#services">Services</a></li>
+     	<li><a href="index.html#contact">Contact</a></li>
+   	</ul>
+
+  </div>
+    
+</div>
+
+<!-- used for showing/hiding navbar when scrolling the page-->
+<div class="snt-waypoint"></div>
+
+<!-- content -->
+<div class="snt-home-container container">
+  
+  <!-- main title  -->
+  <div class="row">
+          
+    <div class="snt-home-title-container col-md-12">
+      <h1> Our service is start to finish digital product development</h1>
+      
+      <h4> We are software development company based in Zagreb with top developers and designers from Europe and United States that cover major technologies and have years of experience in building digital products ranging from web and desktop SaaS to games and mobile apps. <!-- <span><a href="aboutus.html">About Us</a></span> --> </h4>
+      
+      <h4> Need custom software? Let’s talk! <a href="index.html#contact"> Contact us </a> </h4>
+
+      <h2> Solving problems and optimizing results on every step of <br> <b>P</b>roduct <b>L</b>ife <b>C</b>ycle</h2>
+       
+    </div>
+
+  </div>
+
+  <!-- step 1: grow your idea -->
+  <div class="row">
+
+    <div class="snt-home-content col-md-7">
+      <div data-position="left" data-offset="60" class="notViewed animBlock floatl">
+        <h3>1. Growing Your Idea</h3>
+        <p>We transform your thought into detailed specification. We research, prototype and test proof for your concept with design sprint method.</p>
+      </div>
+    </div>
+          
+    <div class="col-md-5 number-1 visible-lg">
+      <div class="snt-line snt-tilt-left"></div>
+      <div class="snt-step-number-icon"><h1>1</h1></div>
+    </div>
+
+  </div>
+         
+	<!-- step 2: product development -->           
+  <div class="row">
+
+    <div class="col-md-5 number-1 visible-lg">
+      <div class="snt-step-number-icon"><h1>2</h1></div>
+      <div class="snt-line snt-tilt-right"></div>
+    </div>
+
+    <div class="snt-home-content col-md-7" >
+      <div  data-position="right" data-offset="60" class="notViewed animBlock floatr">
+        <h3>2. Product Development</h3>
+        <p>Tested and proven ideas are taken through our structured development process from MVP to finished digital product.</p>
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- step 3: consulting -->
+  <div class="row">
+
+    <div class="snt-home-content col-md-7 ">
+      <div data-position="left" data-offset="60" class="notViewed animBlock floatl">
+        <h3>3. Consulting</h3>
+        <p>Based on our experience we offer you knowledge and advice on building and incorporating additional features and further product development.</p>
+      </div>   
+    </div>
+    
+    <div class="col-md-5 number-1 visible-lg">
+      <div class="snt-line snt-tilt-left"></div>
+      <div class="snt-step-number-icon"><h1>3</h1></div>
+    </div>
+
+  </div>
+
+  <!-- step 4: maintenance -->
+  <div class="row">
+
+    <div class="col-md-5 number-1 visible-lg">
+      <div class="snt-step-number-icon"><h1>4</h1></div>
+      <div class="snt-line snt-tilt-right"></div>
+    </div>
+
+    <div class="snt-home-content col-md-7">
+      <div data-position="right" data-offset="60" class="notViewed animBlock floatr">
+        <h3>4. Maintenance </h3>
+        <p>Once your product is here we take care of it trough it's market exposure and offer techincal support during its usage cycle.</p>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- step 5: why us? -->
+  <div class="row"> 
+       
+    <div class="snt-home-content snt-home-content-step-5 col-md-7">
+      
+      <div data-position="left" data-offset="60" class="notViewed animBlock floatl">
+        <h3>5. Why us?</h3>
+        <p>We grow your ideas in our highly organized laboratory. We nurture them into minimum viable products and help them develop their full potential through prototypes and testing until they become full grown masterpiece. We give them support through their working years until they are no longer in service. <b>Idea is the key, product is the mission.</b></p>
+        <a href="" class="snt-button">MORE ABOUT OUR SERVICES</a>
+      </div>     
+
+    </div>
+          
+    <div class="col-md-5 number-1 visible-lg">
+      <div class="snt-line snt-tilt-left"></div>
+      <div class="snt-step-number-icon"><h1>5</h1></div>
+    </div>
+    
+  </div>
+
+  <!-- contact information -->
+  <div class="row">
+
+  	<div class="col-md-5 number-1 visible-lg">
+			<div class="snt-step-number-icon"><h1>6</h1></div>
+    </div>
+
+		<div class="snt-home-content col-md-7">
+
+      <div data-position="right" data-offset="60" class="notViewed animBlock floatr">
+
+    	  <div class="address">
+      		<h3>Contact us</h3>
+        	<h4>Josipa Prikrila 3</h4>
+        	<h4>Zagreb, Hrvatska(Croatia)</h4>
+        	<h4>Phone: +385 98 162 43 39</h4>
+        	<h4>Email: sintezis@ninjatier.com</h4>
+      	</div>
+    		
+        <a href="#contact" id="contact-button" class="snt-button">SEND MESSAGE</a>
+
+      </div>
+        
+		</div>
+
+	</div>
+
+  <!--  contact form -->  
+  <div class="row">
+
+    <div class="snt-contact-form-container col-md-5">
+      
+      <div class="snt-contact-form-line visible-lg"></div>
+      
+      <h2>Contact</h2>
+      
+      <div class="snt-contact-form">
+
+        <form action="https://formspree.io/sintezis@ninjatier.com" method="POST">
+
+          <fieldset>
+
+            <div class="form-group">
+              <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input id="lname" name="lastname" type="text" placeholder="Last Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+            </div>
+            <div class="form-group">
+              <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control" 
+                id="message" 
+                name="message" 
+                placeholder="Enter your massage for us here. We will get back to you as soon as posible." 
+                rows="7">
+              </textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit" class="snt-button snt-contact-form-button">
+            </div>
+
+          </fieldset>
+          
+        </form>
+
+      </div>   
+
+    </div>
+
+    <div class="col-md-5 col-md-offset-2"></div>
+
+  </div>
+
+</div>
+
+<!-- footer -->
+<div class="container">
+	<div class="snt-footer">
+    <p>2017 © Sintezis</p>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js" type="text/javascript"></script>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+<script src="js/scrollview.js" type="text/javascript"></script>
