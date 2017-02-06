@@ -523,26 +523,26 @@
         /*==============================================
          Contact form
          ===============================================*/
-        $("form.contact-comments").on("submit", function (e) {
-            e.preventDefault();
-            var sender = $("#email").val();
-            var name = $("#name").val();
-            var subject = $("#subject").val();
-            var message = $("#comments").val();
-            var phone = $("#phone").val();
+        // $("form.contact-comments").on("submit", function (e) {
+        //     e.preventDefault();
+        //     var sender = $("#email").val();
+        //     var name = $("#name").val();
+        //     var subject = $("#subject").val();
+        //     var message = $("#comments").val();
+        //     var phone = $("#phone").val();
 
-            var target = $(this).attr("action");
-            var that = this;
-            $.post(target, {name:name,subject:subject,email:sender,phone:phone,comments:message},function(data){
-                if($(that).find(".mailstatus").length==0){
-                    $(that).append($("<div/>").addClass("mailstatus"));
-                }
-                $(".mailstatus").html(data).show();
-                setTimeout(function(){
-                    $(".mailstatus").empty().hide();
-                },5000)
-            });
-        });
+        //     var target = $(this).attr("action");
+        //     var that = this;
+        //     $.post(target, {name:name,subject:subject,email:sender,phone:phone,comments:message},function(data){
+        //         if($(that).find(".mailstatus").length==0){
+        //             $(that).append($("<div/>").addClass("mailstatus"));
+        //         }
+        //         $(".mailstatus").html(data).show();
+        //         setTimeout(function(){
+        //             $(".mailstatus").empty().hide();
+        //         },5000)
+        //     });
+        // });
 
     });
 
