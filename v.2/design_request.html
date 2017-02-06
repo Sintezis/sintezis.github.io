@@ -62,7 +62,7 @@
 
 												<!--mega menu start-->
 												<ul class="menuzord-menu op-nav c-nav_s-standard">
-														<li class="active">
+														<li class="">
 																<a href="index.html">Home</a>
 														</li>
 														<li class="">
@@ -115,7 +115,7 @@
 
 				<section class="body-content">
 
-          <div class="page-content">
+          <div class="page-content" id="services">
           	<div class="container">
           		<div class="row">
           			<div class="col-md-12">
@@ -153,35 +153,51 @@
 																		
 																	</div>
 															</div>
+															<div class="row">
+																<div class="col-md-6">
+																	<a href="#" class="snt-btn-next btn btn-extra-small btn-rounded btn-theme-border-color" index="0"> Next</a>
+																</div>
+															</div>
 														</div>
-	                            
 	                        </dd>
 	                        <dt>
 	                            <a href="">What do you have?</a>
 	                        </dt>
 	                        <dd>
 	                            <ul>
-	                            	<li><input type="radio" name="input" value="idea" checked> An idea</li>
-                              	<li><input type="radio" name="input" value="mvp"> Minimum viable product</li>
-	                            	<li><input type="radio" name="input" value="product"> Product on the market</li>
+	                            	<li><input type="radio" name="project-input" value="idea" checked> An idea</li>
+                              	<li><input type="radio" name="project-input" value="mvp"> Minimum viable product</li>
+	                            	<li><input type="radio" name="project-input" value="product"> Product on the market</li>
 	                            </ul>
+	                            <div class="row">
+																<div class="col-md-6">
+																	<a href="#" class="snt-btn-prev btn btn-extra-small btn-rounded btn-theme-border-color" index="1"> Previous</a>
+																	<a href="#" class="snt-btn-next btn btn-extra-small btn-rounded btn-theme-border-color" index="1"> Next</a>
+																</div>
+															</div>
 	                        </dd>
 	                        <dt>
 	                            <a href="">What do you need?</a>
 	                        </dt>
 	                        <dd>
-	                        	<ul>
+	                        	<ul class="mvp-design">
                             	<li><input type="radio" name="idea_needs" value="user_stories" checked> Help in articulating my vision</li>
                             	<li><input type="radio" name="idea_needs" value="design"> Some sketches and design</li>
                             	<li><input type="radio" name="idea_needs" value="spec"> Complete technical specification</li>
                             </ul>
 
-                            <ul>
+                            <ul class="product-design">
                             	<li><input type="radio" name="product_needs" value="user_stories" checked> Product analysis</li>
                             	<li><input type="radio" name="product_needs" value="design"> Improvement of existing features</li>
                             	<li><input type="radio" name="product_needs" value="spec"> Implementation of new features</li>
                             	<li><input type="radio" name="product_needs" value="spec"> Product redesign</li>
                             </ul>
+                            <div class="row">
+															<div class="col-md-6">
+																<a href="#" class="snt-btn-prev btn btn-extra-small btn-rounded btn-theme-border-color" index="2"> Previous</a>
+																<a href="#" class="snt-btn-next btn btn-extra-small btn-rounded btn-theme-border-color" index="2"> Next</a>
+															</div>
+														</div>
 	                        </dd>
 
 	                        <dt>
@@ -197,6 +213,12 @@
 																	</div>						
 																</div>
 															</div>
+															<div class="row">
+																<div class="col-md-6">
+																	<a href="#" class="snt-btn-prev btn btn-extra-small btn-rounded btn-theme-border-color" index="3"> Previous</a>
+																	<a href="#" class="snt-btn-next btn btn-extra-small btn-rounded btn-theme-border-color" index="3"> Next</a>
+																</div>
+															</div>
 														</div>
 	                        </dd>
 	                        <dt>
@@ -210,6 +232,12 @@
 																			<!-- Name -->
 																			<input type="text" name="project-name" id="name" class=" form-control" placeholder="Project Name *" maxlength="100" required="">
 																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-6">
+																	<a href="#" class="snt-btn-prev btn btn-extra-small btn-rounded btn-theme-border-color" index="4"> Previous</a>
+																	<a href="#" class="snt-btn-next btn btn-extra-small btn-rounded btn-theme-border-color" index="4"> Next</a>
 																</div>
 															</div>
 														</div>
@@ -231,6 +259,12 @@
 																	</div>
 																</div>
 															</div>
+															<div class="row">
+																<div class="col-md-6">
+																	<a href="#" class="snt-btn-prev btn btn-extra-small btn-rounded btn-theme-border-color" index="5"> Previous</a>
+																	<a href="#" class="snt-btn-next btn btn-extra-small btn-rounded btn-theme-border-color" index="5"> Next</a>
+																</div>
+															</div>
 														</div>
 	                        </dd>
 
@@ -241,12 +275,12 @@
 	                        	<div class="container">
 															<div class="row">
 			                        	<div class="col-md-6 form-group">
-																	<div class="form-group">
-																			<div class="form-group">
-																			<!-- Name -->
-																			<textarea name="text" id="text" class="cmnt-text form-control" placeholder="List features..." maxlength="400"></textarea>
-																	</div>
-																	</div>
+																		<textarea name="text" id="text" class="cmnt-text form-control" placeholder="List features..." maxlength="400"></textarea>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-6">
+																	<a href="#" class="snt-btn-prev btn btn-extra-small btn-rounded btn-theme-border-color" index="6"> Previous</a>
 																</div>
 															</div>
 														</div>
@@ -270,7 +304,7 @@
           	</div>   
           </div>
 
-        	<div class="parallax-inner dark parallax-15" id="contact">
+        	<div class="parallax-inner dark parallax-15">
 						<div class="container">
 								<div class="row ">
 										<div class="col-md-4">
@@ -366,6 +400,7 @@
 		<script src="assets/vendor/visible/visible.js"></script>
 		<script src="assets/vendor/wow/wow.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/custom_scripts.js"></script>
 		<!-- endinject -->
 
 		<script type="text/javascript">

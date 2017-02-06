@@ -2,6 +2,10 @@
 	color: white;
 }
 
+.snt-design-req-form ul {
+	padding: 0;
+}
+
 .snt-design-req-form ul li {
 	list-style: none;
 }
