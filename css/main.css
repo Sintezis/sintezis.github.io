@@ -1,0 +1,716 @@
+/* 
+SINTEZIS classes basic style
+use snt- (sintezis)prefix, eg .snt-main-content 
+*/
+/* Formated classes, following google style guide https://google.github.io/styleguide/htmlcssguide.xml */
+
+/*********************
+****** MAIN CSS ****** 
+**********************/
+
+/* elements styles */
+
+a:hover { 
+  border-color: #1990b2; 
+  color: white; 
+  text-decoration: none; 
+}
+
+p { 
+  color: #DCDCDC; 
+}
+h1 { 
+  color: #fff; 
+}
+
+h2 {
+ color: #fff; 
+}
+
+h3 { 
+  color: #1990b2; 
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+/*********************
+*** GLOBAL CLASSES *** 
+**********************/
+
+.snt-body-bg {
+  background-size: fill;
+  overflow-x: hidden;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.snt-button {  
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 3px;
+  color: white;
+  float: left;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+/*navigation & menu*/
+.snt-nav-bar { 
+  background-color: #000;
+  display: none;
+  height: 80px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  transition: opacity .25s ease-in;
+  width: 100%;
+  z-index: 100;
+  -moz-transition: opacity .25s ease-in;
+  -webkit-transition: opacity .25s ease-in;
+}
+
+.snt-logo { 
+  float: left; 
+  margin-left: 20px; color: #FFF; 
+}
+
+.snt-menu-icon {
+  float: right;
+  position: relative;
+  z-index: 100;
+  top: 1rem; 
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 100%;
+  overflow: hidden;
+  border:2px solid #1990b2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out
+}
+
+.snt-menu-icon.active { 
+  border: 2px solid white;
+}
+
+/*icon menu lines*/
+.snt-menu-icon div {
+  background-color: white;
+  border:1px solid #000;
+  display: block;
+  height: 3px;
+  left: 20%;
+  right: 20%;
+  position: absolute;
+  -webkit-transition: 
+    opacity 0.3s ease-in-out, 
+    visibility 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out, 
+    visibility 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out, 
+    border 0.3s ease-in-out
+}
+
+.snt-menu-icon.active div {
+  border: 0;
+  background-color: #1990b2 ;
+}
+
+/*icon menu lines positions*/
+.snt-menu-icon div[line='1']{
+  top:30%;
+}
+
+.snt-menu-icon.active div[line='1'] {
+  -webkit-transform:rotate(40deg);
+  -ms-transform:rotate(40deg);
+  transform:rotate(40deg);top:47%
+}
+
+.snt-menu-icon div[line='2']{
+  top:45%;
+}
+
+.snt-menu-icon.active div[line='2'] {
+  top:47%
+  -webkit-transform:rotate(-40deg);
+  -ms-transform:rotate(-40deg);
+  transform:rotate(-40deg);
+}
+
+.snt-menu-icon div[line='3'] {
+  top:60%;
+}
+
+.snt-menu-icon.active div[line='3'] { 
+  opacity: 0;
+  visibility: hidden
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.snt-menu-container {
+  position: fixed;
+  background: rgba(0,0,0,0.85);
+  z-index: 50;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  padding: 6em 0 1em 5em;
+  height: 100%;
+  width: 100%;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  transform:scale(0.8, 0.8);
+  -webkit-transition: 
+    opacity 0.3s ease-in-out, 
+    visibility 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+  transition: 
+    opacity 0.3s ease-in-out, 
+    visibility 0.3s ease-in-out, 
+    transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.snt-menu-container.active {
+  opacity: 1; 
+  text-align: center;
+  transform: scale(1, 1);
+  visibility: visible;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+}
+
+.snt-menu {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2em;
+  line-height: 142%;
+  -webkit-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%)
+}
+
+.snt-menu a {
+  color: white;
+}
+.snt-menu a:hover {
+  color: #168fef;
+}
+
+.snt-footer{
+  text-align: center;
+}
+
+/******************
+**** HOME PAGE ****
+******************/ 
+
+/* layout, video title in full screen, image title on mobile */
+
+.snt-home-body-bg {
+  background: url('../img/home-bg.jpg') no-repeat center center fixed; 
+}
+
+.snt-home-container {
+  position: relative;
+}
+
+.snt-main-title-container {
+  background-color: black;
+}
+
+.snt-home-title-container{
+  font-weight: bold;
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+
+/* treshold for detecting screen offset */
+.snt-waypoint{
+  margin-top: -150px;
+  margin-bottom: 150px;
+}
+
+.snt-home-title-container h1 {
+  text-align: center;
+}
+
+.snt-home-title-container h2 {
+  text-align: center;
+}
+
+.snt-home-title-container h4 {
+  color: #fff;
+}
+
+/* video title container */
+.snt-video-md-container { 
+  background-color: black; 
+  height: 100vh; 
+  margin: 0 auto;
+}
+
+/* image title container */
+.snt-img-xs-container {
+
+}
+
+/* mobile title img */
+.snt-home-title-img { 
+  width: 100%;
+}
+
+/* down arrow */
+.snt-arrow-down { 
+  margin: 0 auto; 
+  position: relative; 
+  text-align: center;
+  background-color: black;
+}
+
+.snt-arrow-down-png {
+  margin-top: -100px;
+  position: relative;  
+}
+
+.snt-home-content {
+  color: white;
+  min-height: 267px;
+  padding: 40px 25px;
+  position: relative;
+}
+
+.snt-home-content h3{
+  font-size: 30px; 
+}
+
+.snt-home-content p {
+  font-size: 20px; 
+}
+
+.snt-home-content-step-5 {
+  padding: 0 25px 0 25px;
+}
+
+/* sintezis plc steps graph 1 - 6 */
+
+.snt-graph-container {
+  position: relative;
+}
+
+.snt-step-number-icon {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: solid medium #FFF;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 65px;
+  margin-left: 180px
+}
+
+.snt-step-number-icon h1 {
+  font-size: 45px;
+  color: white;
+}
+ 
+.snt-line {
+  background-color: #fff;
+  height: 636px;
+  opacity: 0.3;
+  position: absolute;
+  top:-70px;
+  width: 2px;
+}
+
+.snt-tilt-left {
+  right: 583px;
+  transform: rotate(70deg);
+  -webkit-transform: rotate(70deg); 
+  -moz-transform: rotate(70deg);
+}
+
+.snt-tilt-right {
+  left: 585px;
+  transform: rotate(111deg);     
+  -webkit-transform: rotate(111deg); 
+  -moz-transform: rotate(111deg);
+}
+
+/* contact form */
+
+.snt-contact-form-line {
+  background-color: #fff;
+  height: 137px;
+  opacity: 0.3;
+  position: absolute;
+  right: 257px;
+  top: -137px;
+  width: 2px;
+}
+
+.snt-contact-form-container {
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 5%;
+  text-align: center;
+  padding-bottom: 25px;
+  display: none;
+  opacity: 0;
+}
+
+.snt-contact-form-button {
+  background-color: black;
+  float: right;
+}
+
+/******************* 
+**** ABOUT PAGE ****
+*******************/
+
+.snt-about-body-bg {
+  background: url('../img/about-bg.png') no-repeat center center fixed; 
+}
+
+.snt-about-content-container {
+  margin-top: 100px;
+}
+
+.snt-about-content-container h1 {
+  margin-bottom: 20px;
+}
+
+.snt-about-content {
+  color: white;
+  font-size: 22px;
+} 
+
+.snt-wheel-container {
+  position: fixed;
+  top: 20%;
+  right: 15%;
+  width: 420px;
+  height: 420px;
+}
+
+.snt-wheel-display-container {
+  border-radius: 50%;
+  border: solid 2px rgba(255, 255, 255, 0.33);
+  float: left;
+  height: 210px;
+  margin-left: 105px;
+  margin-top: 105px;
+  position: relative;
+  width: 210px;
+  z-index: 10;
+  background-image: url('../img/team/sintezis-circle.png');
+  background-position: center;   
+}
+
+.snt-wheel-display {
+  position: absolute;
+  z-index: 8;
+  border-radius: 50%;
+  background-image: url('../img/team/sintezis-circle.png');
+  height: 210px;
+  width: 210px;
+  background-position: center; 
+}
+
+.snt-pie-wheel-container {
+  border: solid 2px rgba(255, 255, 255, 0.33);
+  border-radius: 50%;
+  height: 420px;
+  width: 420px
+  position: relative;
+  transform-origin: center center 0;
+  transition: all 1s ease 0s;  
+}
+
+.snt-pie-section {
+  cursor:pointer;
+  height: 210px;
+  left: 130px;
+  position: absolute;
+  transform-origin: bottom center;
+  width: 160px;
+}
+
+/**********************************
+************* MOBILE **************
+**********************************/
+
+/*medium tablet*/
+@media (max-width: 1024px) {
+
+  
+}
+
+/* phablet */
+
+@media (max-width: 525px) {
+
+  /*load bg for mobile*/
+
+  /*SO Fix*/
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url('../img/home-bg-mobile.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /*home page remove arrow down*/
+  .snt-arrow-down {
+    display: none;
+  }
+
+  /*home page remove border on contact*/
+  .snt-contact-form-container {
+    border: none;
+  }
+
+}
+
+/*phone*/
+@media (max-width: 320px) {
+
+  /*adjust nav bar height*/
+  .snt-nav-bar {
+    height: 60px;
+  }
+
+  .snt-menu-icon {
+    top: 0.5rem;
+  }
+}
+/* Formatted classes end */
+
+
+
+/** UNFORMATTED AND UNKNOWN CODE FROM THIS POINT ON **/
+
+.button{
+	    /* display: inline-block; */
+    width: auto;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 3px;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    float: right;
+}
+
+
+
+
+
+
+/*I have no idea what the following is*/
+
+
+/* © preloader */
+
+.no-js #loader { 
+  display: none;  
+}
+
+.js #loader { 
+  display: block; position: absolute; left: 100px; top: 0; 
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: black;
+}
+
+
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.uil-ring-css {
+  background: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+    top: 42%;
+    left: 43%;
+}
+.uil-ring-css > div {
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 20px;
+  border-radius: 80px;
+  box-shadow: 0 6px 0 0 #59ebff;
+  -ms-animation: uil-ring-anim 1s linear infinite;
+  -moz-animation: uil-ring-anim 1s linear infinite;
+  -webkit-animation: uil-ring-anim 1s linear infinite;
+  -o-animation: uil-ring-anim 1s linear infinite;
+  animation: uil-ring-anim 1s linear infinite;
+}
