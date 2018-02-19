@@ -69,52 +69,6 @@ $(document).ready(function() {
 
   });
 
-  // ABOUT PAGE
-
-  // about us wheel menu
-  var numberOfSections = 8
-  var imgPaths = [
-    "sintezis-circle.png",
-    "simun.png",
-    "sonja.png",
-    "tom.png",
-    "you.png",
-    "goran.png",
-    "andrej.png",
-    "koza.png"
-  ]
-
-  //set pictures rotation programaticlly
-  for (var i = 0; i < numberOfSections; i++) {
-    var offset = (360 / numberOfSections) * i
-    var sectionIndex = i + 1
-    $(".snt-pie-section[pie-section='" + sectionIndex + "']").css({'transform' : 'rotate('+ offset +'deg)'})
-  }
-  
-  //rotate the wheel to the right degree
-  $(".snt-pie-section").click(function() {
-    var sectionIndex = $(this).attr("pie-section") - 1 // we need index ranging from 0, to get the right section offset in deg
-    var sectionOffsetDeg = (360 / numberOfSections) * sectionIndex
-
-    //rotate imge
-    $('.snt-pie-wheel-container').css({'transform' : 'rotate(-'+ sectionOffsetDeg +'deg)'});
-
-    //load image
-    $('.snt-wheel-display').fadeOut(500, function() {
-      $(".snt-wheel-display").css('background-image','url(img/team/'+ imgPaths[sectionIndex] +')').fadeIn(500);
-    })
-
-    //load data
-    $.getJSON("js/team_data.json", function(teamData){
-      var title = teamData[sectionIndex].title
-      var description = teamData[sectionIndex].description
-
-      $(".snt-abount-content-container h1").text(title)
-      $(".snt-about-content").html(description)
-    })
-  })
-
-
   // SANTEK
   /* smood scroll */
   $(function() {
