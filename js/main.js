@@ -69,6 +69,21 @@ $(document).ready(function() {
 
   });
 
+  // SERVICES PAGE
+
+  $(".services-box").hover(function(){
+    $(this).prev(".hexagon").find(".active-hex").show()
+  }, function(){
+    $(this).prev(".hexagon").find(".active-hex").hide()
+  })
+
+
+  $(".hexagon").hover(function(){
+    $(this).find(".active-hex").show()
+  }, function(){
+    $(this).find(".active-hex").hide()
+  })
+
   // SANTEK
   /* smood scroll */
   $(function() {
