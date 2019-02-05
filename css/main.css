@@ -590,6 +590,10 @@ h3 {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.services-box ul li {
+  color: #DCDCDC;
+}
+
 .services-box h3 {
   margin: 0 auto;
 }
