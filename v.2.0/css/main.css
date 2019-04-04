@@ -1,0 +1,59 @@
+/* 
+SINTEZIS classes basic style
+use snt- (sintezis)prefix, eg .snt-main-content 
+*/
+/* Formated classes, following google style guide https://google.github.io/styleguide/htmlcssguide.xml */
+
+/*********************
+****** MAIN CSS ****** 
+**********************/
+
+body {
+	/* background-color: #070707 */
+	background: url(../imgs/header-bg-2.jpeg) center center no-repeat black;
+}
+
+.snt-container {
+	
+	
+}
+
+.snt-logo {
+	margin-top: 150px;
+	margin-left: 60px;
+}
+
+.vertical-label {	
+	font-family: 'Overpass', sans-serif;
+	font-style: normal;
+	color: #FFC700;
+	letter-spacing: 12px;
+	font-size: 16px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	width: 250px;
+	margin: 130px 0 0 130px;
+}
+
+.snt-header-container {
+	width: 720px;
+	margin-left: 300px;
+	margin-top: 0px;
+	font-family: 'Barlow', sans-serif;
+	color: white;
+}
+
+.snt-header-container h1 {
+	font-size: 75px;
+	font-weight: 400;
+	line-height: 105px;
+}
+
+.snt-header-container p {
+	font-size: 28px;
+	font-weight: 100;
+	line-height: 45px;
+	width: 650px;
+}
