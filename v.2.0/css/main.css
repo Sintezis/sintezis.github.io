@@ -10,13 +10,62 @@ use snt- (sintezis)prefix, eg .snt-main-content
 
 body {
 	/* background-color: #070707 */
-	background: url(../imgs/header-bg-2.jpeg) center center no-repeat black;
+	/* background: url(../imgs/bg-3.jpeg) top center no-repeat black; */
 }
 
-.snt-container {
-	
-	
+.bg-1 {
+	background: url(../imgs/bg-1.jpeg) top center no-repeat black;
 }
+
+.bg-2 {
+	background: url(../imgs/bg-2.png) center center no-repeat black;
+	background-size: cover;
+}
+
+.bg-3 {
+	background-color: black;
+}
+
+.bg-4 {
+	background: url(../imgs/bg-4.png) center center no-repeat black;
+	background-size: cover;
+}
+
+.bg-5 {
+	background: url(../imgs/bg-5.png) top center no-repeat black;
+	background-size: cover;
+}
+
+
+
+.snt-container h1 {
+	font-size: 75px;
+	font-weight: 400;
+	line-height: 105px;
+	color: white;
+}
+
+.snt-container h2 {
+	font-family: Overpass;
+	font-style: normal;
+	font-size: 42px;	
+	font-weight: 900;	
+	line-height: 48px;
+	letter-spacing: -2px;
+	color: white;
+	width: 60%;
+	text-align: right;
+	float: right;
+	margin-bottom: 50px;
+}
+
+.snt-container span {
+	font-family: Barlow;	
+	font-size: 24px;	
+	line-height: 36px; 	
+	color: #FF6B00;
+}
+
 
 .snt-logo {
 	margin-top: 150px;
@@ -45,15 +94,20 @@ body {
 	color: white;
 }
 
-.snt-header-container h1 {
-	font-size: 75px;
-	font-weight: 400;
-	line-height: 105px;
-}
-
 .snt-header-container p {
 	font-size: 28px;
 	font-weight: 100;
 	line-height: 45px;
 	width: 650px;
+}
+
+.label-2 {
+	height: 84px;	
+	color: #FFFFFF;
+	font-family: Barlow;	
+	font-size: 18px;
+	font-weight: 200;	
+	line-height: 28px;	
+	text-align: right;
+	float: right;
 }
