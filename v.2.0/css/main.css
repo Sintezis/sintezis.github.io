@@ -8,71 +8,87 @@ use snt- (sintezis)prefix, eg .snt-main-content
 ****** MAIN CSS ****** 
 **********************/
 
-body {
-	/* background-color: #070707 */
-	/* background: url(../imgs/bg-3.jpeg) top center no-repeat black; */
+/* Fonts and backgrounds */
+
+h1, h2 {
+	font-family: Overpass;
 }
 
-.bg-1 {
-	background: url(../imgs/bg-1.jpeg) top center no-repeat black;
+p, span {
+	font-family: Barlow;	
 }
 
-.bg-2 {
-	background: url(../imgs/bg-2.png) center center no-repeat black;
-	background-size: cover;
-}
-
-.bg-3 {
-	background-color: black;
-}
-
-.bg-4 {
-	background: url(../imgs/bg-4.png) center center no-repeat black;
-	background-size: cover;
-}
-
-.bg-5 {
-	background: url(../imgs/bg-5.png) top center no-repeat black;
-	background-size: cover;
-}
-
-
-
-.snt-container h1 {
+h1 {
 	font-size: 75px;
 	font-weight: 400;
 	line-height: 105px;
-	color: white;
 }
 
-.snt-container h2 {
-	font-family: Overpass;
-	font-style: normal;
+h2 {
 	font-size: 42px;	
 	font-weight: 900;	
 	line-height: 48px;
 	letter-spacing: -2px;
-	color: white;
-	width: 60%;
-	text-align: right;
-	float: right;
-	margin-bottom: 50px;
 }
 
-.snt-container span {
+.snt-bg-1 {
+	background: url(../imgs/bg-1.jpeg) top center no-repeat black;
+}
+
+.snt-bg-2 {
+	background: url(../imgs/bg-2.png) center center no-repeat black;
+	background-size: cover;
+}
+
+.snt-bg-3 {
+	background-color: black;
+}
+
+.snt-bg-4 {
+	background: url(../imgs/bg-4.png) center center no-repeat black;
+	background-size: cover;
+}
+
+.snt-bg-5 {
+	background: url(../imgs/bg-5.png) center center no-repeat black;
+	background-size: cover;
+}
+
+.snt-small-label {
+	font-size: 18px;
+	font-weight: 100;	
+	line-height: 28px;	
+}
+
+.snt-medium-label {
+	font-size: 24px;	
+	line-height: 36px;
+	font-weight: 100;
+}
+
+/* Custom elements */
+
+.snt-container {
+	color: white;
+}
+
+.snt-container button {
+	margin: 35px 0 35px 0;
+	width: 200px;
+	height: 60px;
+	color: black;
+	border-radius: 0;
 	font-family: Barlow;	
 	font-size: 24px;	
-	line-height: 36px; 	
-	color: #FF6B00;
+	line-height: 29px;
 }
-
 
 .snt-logo {
 	margin-top: 150px;
 	margin-left: 60px;
 }
 
-.vertical-label {	
+.snt-vertical-label {	
 	font-family: 'Overpass', sans-serif;
 	font-style: normal;
 	color: #FFC700;
@@ -86,28 +102,132 @@ body {
 	margin: 130px 0 0 130px;
 }
 
+.snt-header-section h2 {
+	width: 60%;
+	margin-bottom: 50px;
+}
+
 .snt-header-container {
 	width: 720px;
 	margin-left: 300px;
 	margin-top: 0px;
-	font-family: 'Barlow', sans-serif;
-	color: white;
 }
 
+
 .snt-header-container p {
-	font-size: 28px;
-	font-weight: 100;
-	line-height: 45px;
 	width: 650px;
 }
 
-.label-2 {
-	height: 84px;	
-	color: #FFFFFF;
+.snt-blog-section h2 {
+	margin-top: 200px; 
+	margin-bottom: 100px
+}
+
+.snt-blog-section ul {
+	list-style: none;
+	margin: 0 0 350px 0;
+	padding: 0;
+}
+
+.snt-blog-section span {
+	font-size: 24px;	
+	line-height: 36px; 	
+	color: #FF6B00;
+}
+
+.snt-separator {
+	background-color: rgba(255, 199, 0, 0.3);
+	width: 120px;
+	height: 1px;
+	margin: 20px 0 20px -15px;
+}
+
+.snt-hiring-section p {
+	padding-left: 140px;
+}
+
+.snt-hiring-section button {
+
+}
+
+.snt-team-section h2 {
+	margin-bottom: 50px; 
+	margin-top: 300px;
+}
+
+.snt-image-contaner {
+	width: 282px;
+	height: 370px;
+	background-color: rgba(2,46,60,0.36);
+	padding: 20px;
+}
+
+.snt-image-contaner span {
+	display: block;
+	color: white; 
+	text-align: center;
+	width: 100%;
+	font-weight: 400;
+	margin: 10px 0 10px 0;
+}
+
+.snt-contact-section {
+	
+}
+
+.snt-contact-section h2 {
+	color: black;
+	margin-top: 2500px;
+}
+
+.snt-contact-section p {
+	color: black;
+	margin-top: 60px;
+}
+
+.snt-contact-form {
+	margin: 70px 0 0 0;
+	color: rgba(0,0,0, 0.5);
+}
+
+.snt-contact-form input, 
+.snt-contact-form textarea {
+	margin: 25px 0 25px 0;
+	height: 50px;
+	border: 0;
+  outline: 0;
+  background: transparent;
+	border-bottom: 1px solid rgba(0,0,0, 0.5);
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	width: 100%;
+}
+
+.snt-contact-form textarea,
+.snt-contact-form input, 
+.snt-contact-form input::-webkit-input-placeholder {
+  font-size: 20px;
+	line-height: 3;
 	font-family: Barlow;	
-	font-size: 18px;
-	font-weight: 200;	
-	line-height: 28px;	
-	text-align: right;
-	float: right;
+	font-size: 25px;	
+	line-height: 28px;
+}
+
+.snt-contact-form textarea {
+	height: 200px;
+	padding-right: 20px;
+}
+
+.snt-social-section {
+	margin: 200px 0 0 0;
+}
+
+.snt-footer {
+	margin: 100px 0 50px 0;
+}
+
+.snt-footer img {
+	margin: 0 auto;
 }
