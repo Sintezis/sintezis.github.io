@@ -36,8 +36,8 @@ h2 {
 }
 
 .snt-bg-2 {
-	background: url(../imgs/bg-2.png) center center no-repeat black;
-	background-size: cover;
+	background: url(../imgs/bg-2.jpg) center center no-repeat black;
+	background-size: contain;
 }
 
 .snt-bg-3 {
@@ -45,19 +45,19 @@ h2 {
 }
 
 .snt-bg-4 {
-	background: url(../imgs/bg-4.png) center center no-repeat black;
+	background: url(../imgs/bg-4.png) top center no-repeat black;
 	background-size: cover;
 }
 
 .snt-bg-5 {
-	background: url(../imgs/bg-5.png) center center no-repeat black;
+	background: url(../imgs/bg-5-alt.png) top center no-repeat black;
 	background-size: cover;
 }
 
 .snt-small-label {
 	font-size: 18px;
 	font-weight: 100;	
-	line-height: 28px;	
+	line-height: 28px;
 }
 
 .snt-medium-label {
@@ -67,6 +67,13 @@ h2 {
 }
 
 /* Custom elements */
+
+.snt-header-section,
+.snt-blog-section,
+.snt-hiring-section,
+.snt-contact-section {
+	height: 1280px;
+}
 
 .snt-container {
 	color: white;
@@ -104,7 +111,8 @@ h2 {
 
 .snt-header-section h2 {
 	width: 60%;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
+	margin-top: 240px;
 }
 
 .snt-header-container {
@@ -119,13 +127,13 @@ h2 {
 }
 
 .snt-blog-section h2 {
-	margin-top: 200px; 
-	margin-bottom: 100px
+	margin-top: 260px; 
+	margin-bottom: 60px;
 }
 
 .snt-blog-section ul {
 	list-style: none;
-	margin: 0 0 350px 0;
+	margin: 0;
 	padding: 0;
 }
 
@@ -133,6 +141,16 @@ h2 {
 	font-size: 24px;	
 	line-height: 36px; 	
 	color: #FF6B00;
+}
+
+.snt-blog-section a {
+	height: 36px;	
+	width: 113px;	
+	color: #FFC700;	
+	font-family: Barlow;	
+	font-size: 20px;	
+	font-weight: 600;	
+	line-height: 36px;
 }
 
 .snt-separator {
@@ -146,8 +164,8 @@ h2 {
 	padding-left: 140px;
 }
 
-.snt-hiring-section button {
-
+.snt-team-section {
+	height: 1820px;
 }
 
 .snt-team-section h2 {
@@ -177,7 +195,7 @@ h2 {
 
 .snt-contact-section h2 {
 	color: black;
-	margin-top: 2500px;
+	/* margin-top: 1200px; */
 }
 
 .snt-contact-section p {
@@ -221,7 +239,7 @@ h2 {
 }
 
 .snt-social-section {
-	margin: 200px 0 0 0;
+	margin: 0 0 0 0;
 }
 
 .snt-footer {
