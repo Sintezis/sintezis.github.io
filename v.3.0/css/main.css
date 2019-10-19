@@ -1,0 +1,298 @@
+@font-face {
+	font-family: 'Telegrafico'; /*a name to be used later*/
+	src: url('../fonts/telegrafico.ttf'); /*URL to font*/
+}
+
+@font-face {
+	font-family: 'Campton'; /*a name to be used later*/
+	src: url('../fonts/Campton-BoldDEMO.otf'); /*URL to font*/
+}
+
+html, body, .snt-container { 
+	height: 100%;
+	background-color: black;
+}
+
+section {
+	height: 100%;
+	width: 100%;
+}
+
+p {
+	font-family: Barlow;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #A6AAC8;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	font-family: Overpass;
+}
+
+h1 {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 72px;
+	line-height: 64px;
+	color: white
+}
+
+h2 {
+	font-family: Campton;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 60px;
+	color: white
+}
+
+h3 {
+	font-family: Overpass;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 30px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+h4 {
+	font-family: Telegrafico;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 8px;
+	color: #FF6B00;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #FB178A;
+}
+
+.snt-btn:hover {
+	color: #FB178A;
+}
+
+.subtitle {
+	font-size: 25px;
+	line-height: 32px;
+	text-align: left;
+}
+
+.snt-welcome-section {
+	background: url(../imgs/welcome-bg.png) bottom center no-repeat black;
+	background-size: cover;
+}
+
+.snt-welcome-container {
+	height: 80%;
+	background-color: rgba(0, 0, 0, 0.9);
+	margin-top: 8%;
+	padding-right: 60px;
+}
+
+.snt-logo {
+	margin-top: 76px;
+	margin-bottom: 76px;
+}
+
+.snt-btn {
+	background-color: black;
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 4px;
+	width: 291px;
+	height: 57px;
+	font-family: Overpass;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+	color: white;
+}
+
+.snt-btn:hover {
+	color: #FB178A;
+}
+
+.snt-btn img {
+	margin-left: 20px;
+}
+
+/* .snt-cta-row-bg {
+	background: url(../imgs/neon-party-bg.png) center center no-repeat black;
+	background-size: cover;
+	height: 600px;
+} */
+
+.snt-cta-section {
+	background: url(../imgs/neon-party-bg.png) bottom center no-repeat black;
+	background-size: cover;
+}
+
+.cta-h1 {
+	font-size: 46px;
+	text-align: center;
+}
+
+.cta-h4 {
+	color: white;
+	text-align: center;
+}
+
+.snt-nav-bar {
+	display: none;
+} 
+
+.snt-carousel {
+	width:100%;
+	margin:auto;
+}
+
+.snt-carousel-item img {
+	width: 95%; 
+}
+
+.snt-carousel-item h3 {
+	text-align: left;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-top: 40%;
+}
+
+.snt-carousel-item p {
+	margin-top: 30px;
+	text-align: left;
+	color: white;
+	width: 70%;
+}
+
+.snt-carousel-control-icon {
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	display: inline-block;
+}
+
+.snt-carousel-control-prev {
+	margin-left: -50%;
+}
+
+.snt-carousel-control-ext {
+	margin-right: -50%;
+} 
+
+.snt-jobs-btn {
+	text-align: left;
+	width: 100%;
+	height: 70px;
+	margin: 15px 5px 15px 5px;
+}
+
+.snt-jobs-btn p {
+	text-align: left;
+	display: inline;
+}
+
+.snt-jobs-btn img {
+	margin-top: -15px;
+	width: 30px;
+	height: 30px;
+}
+
+.snt-blog-header-lg {
+	background: url(../imgs/blog-header-bg-lg-placeholder.png) top center no-repeat black;
+	background-size: cover;
+	height: 500px;
+	padding-top: 25%;
+}
+
+.snt-blog-header-lg h2 {
+	padding: 0 20px 10px 20px;
+}
+
+.snt-blog-header-lg span, .snt-blog-header-md span {
+	display: block;
+	font-family: Overpass;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+	margin: 10px 0 10px 0;
+	padding: 0px 20px 10px 20px;
+}
+
+.snt-blog-header-md {
+	height: 240px;
+	padding-top: 18%;
+}
+
+.snt-blog-header-md h2 {
+	font-size: 22px;
+	line-height: 30px;
+	padding: 0 20px 0px 20px;
+}
+
+.snt-blog-header-ph-1 {
+	background: url(../imgs/blog-bg-md-placeholder-1.png) top center no-repeat black;
+	background-size: cover;
+}
+
+.snt-blog-header-ph-2 {
+	background: url(../imgs/blog-bg-md-placeholder-2.png) top center no-repeat black;
+	background-size: cover;
+}
+
+.snt-contact-section input {
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	border-bottom: solid 2px white;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin: 15px 0 15px 0;
+	font-family: Barlow;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 26px;
+	color: white;
+}
+
+::placeholder {
+	font-family: Barlow;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 26px;
+	color: rgba(166, 170, 200, 0.5);
+}
+
+.snt-footer-section {
+	background: url(../imgs/bg-neon-arrows.png) top center no-repeat black;
+	background-size: cover;
+}
+
+.snt-address-container {
+	margin-left: 50px;
+}
+
+.snt-address-container p, .snt-address-container h3 {
+	text-align: left;
+	color: white;
+}
+
+.snt-contact-container {
+	margin-right: 50px;
+}
+
+.snt-contact-container p, .snt-contact-container h3 {
+	text-align: right;
+	color: white;
+	font-weight: normal;
+}
+
