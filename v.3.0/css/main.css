@@ -65,6 +65,7 @@ h4 {
 	line-height: 22px;
 	letter-spacing: 8px;
 	color: #FF6B00;
+	text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -296,3 +297,54 @@ h4 {
 	font-weight: normal;
 }
 
+.snt-blog-container p, .snt-blog-container h3 {
+	text-align: left
+}
+
+.snt-blog-container h2 {
+	font-family: Overpass;
+	font-size: 60px;
+	line-height: 72px;
+	color: #FFFFFF;
+	margin-bottom: 30px;
+}
+
+.snt-blog-container h3 {
+	font-family: Overpass;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 44px;
+	line-height: 67px;
+	color: #FFFFFF;
+	margin: 70px 0 30px 0;
+}
+
+.snt-blog-container p {
+	font-family: Barlow;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 26px;
+	color: #F0F2FE;
+	margin: 20px 0 20px 0; 
+}
+
+.snt-quotes {
+	border-left: solid 5px #FFC700;
+}
+
+.snt-quotes p {
+	font-family: Barlow;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 42px;
+	color: #FFC700;
+}
+
+.snt-quotes cite {
+	font-family: Barlow;
+	font-style: normal;
+	text-align: right;
+	color: #FFC700;
+}

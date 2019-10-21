@@ -1,0 +1,188 @@
+<!-- style guide rules 
+
+1. use tabs instead of spaces! 
+tab size: 2 
+
+2. css classes order eg.
+  <elm class="snt-custom-class bootstrap-class"></elm>
+
+3. write short comment explanations for elements and events,
+explain the code and keep it simple
+
+4. !!WARNING!! html, header, body and similar tags are omttied for a reason, not by accident!
+Checkout the following google style guide https://google.github.io/styleguide/htmlcssguide.xml
+
+style guide rules end -->
+
+<!doctype html>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<title>Sintezis</title>
+
+<!-- Latest compiled and minified Boostrap 3 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400|Overpass:100,300,400,900" rel="stylesheet">
+
+<link href="css/navbar_style.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+
+
+<!-- here we use body tag to add custom classes to it, no need to close it, or account it in tags hierarchy  -->
+<body class="snt-body-bg">
+
+<!-- content -->
+<div class="snt-container container-fluid">
+
+  <nav class="snt-nav-bar navbar navbar-default navbar-fixed-top show">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img src="imgs/logo-white.png" class="navbar-brand" height="30" alt="">
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html#welcome">Welcome</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#team">The Team</a></li>
+          <li><a href="index.html#career">Career</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="">Partnership</a></li>
+        </ul>
+      </div>
+    </div>
+	</nav>
+
+	<div class="row">
+		<div class="col-md-12">
+			<img src="imgs/blog-header-lg.png" width="100%" alt="">
+		</div>
+	</div>
+
+	<div class="row snt-blog-container">
+		<div class="col-md-6 col-md-offset-2" style="padding-right: 80px;">
+			<h4>meet the sintezis team</h4>
+			<h2>We failed plenty so you don't have to</h2>
+			<p>Hi there</p>
+			<p>And Welocome</p>
+			<p>I guess it's a weird thing seeing a company introduction blog post stating "we failed plenty" in the title, but crazy enough our entire business model is based on that premise.Let me explain a bit.Most of us have been working as some form of software developer or a designer, or aproject manager, CTO, whatever, for many years. Domagoj who is our eldest and CEO has been building mobile apps since the 90s, so yeah, we're talking some real nokia 3310 codingmagic.Being the creative types we are, none of us could stay long at positions with repetitive tasks,or in large companies and corporations. Little by little as we got better at our jobs, we gravitated towards the startup sector of the industry. </p>
+			<p>Ah yes, the never ending startup maze.</p>
+			<p>With that metaphor in mind you can think of us as your labyrint tour guide. We take youaround the maze, throw you a few historical facts along the way, and then escort you to thenearest exit. What that translates to is, we've been around. We've been around in the startup scene long enough to see a very large number of ways a startup can flop.</p>
+			<p>Lot's of dead ends. Just like a maze, get it ?</p>
+			<h3>The Silver Lining</h3>
+			<p>A few years back I was working on one such start up (that failed), I lost a decent amount of money, CEO was a hoax, BUT the development team was awesome. In terms of the development process it was one of the easiest projects I have ever worked on, everyone knew exactly what their job was, and knew how to do it.</p>
+			<p>As the project tanked, the four of us in the DT kind spontaneously just kept on working together, one thing led to another, and a few months later Sintezis was born. In the first couple of weeks we largely discussed about what are we actually doing or selling. The overall consensus was that we are all creative types, who constantly need to be on the fringeand learn new things, so no wonder we all ended up meeting on a start up project.The other thing in common, no one was surprised that the project nuked. </p>
+			<p>Again, one thing lead to another, and soon we realised we have this large data bank of past startup projects we've worked on, with clear and similar reasons why they failed. </p>
+			<img src="imgs/blog-img.png" width="100%" alt="">
+			<p> When we started to abstract what the most common problems are, this process started tounveil, series of actions we could do to prevent the start up to fail, up it’s chances. Werealised that knowledge could be valuable to our customers.</p>
+			<p>Like a map. Of a maze, get it ? :)</p>
+			<p>Statistics is a startup's worst enemy. You will most probably fail, numbers don't lie. That doesn't mean you shouldn't do it. Because next time you do it your chances will go up a bit,and the next time they will go up again, and the next time, and the next... Well, the reality isthat most people are not Elon Musk, and don’t have millions to spend until they learn how to launch a successful startup, or a rocket.</p>
+			<p>With that in mind we detected a niche we could fill in, after all we definitely knew how NOT to launch a startup.</p>
+			<h3>The Meta</h3>
+			<p>On one of our daily standups for our official website, we shortly discussed an idea of puttingout our first official blog post. You know, "meet the team" kind of a post. So ideas cameflying, things like: "let's list all the members and write about their professional careers", "listall our projects", things like that... </p>
+			<p>While there is nothing wrong with those kind of approach“es, something kept bugging me. This cool sentence that Steve Wozniak said in some interview:</p>
+			<blockquote class="snt-quotes">
+				<p>Engineering requires a certain level of honesty</p>
+				<footer><cite title="Steve Wozniak">Steve Wozniak</cite></footer>
+			</blockquote>
+			<p>Why would you work with us? Why would anyone? What would it take for you to entrust uswith your dream project and thousands of dollars along with it?</p>
+			<p>Trust, trust would make you do that.</p>
+			<p>So, how do we build that trust?</p>
+			<p>We show off with some projects, show you our case studies, pull together an impressive portfolio... But still, there is a problem, you still don't know if we've been honest. We could'vefaked it, the portfolio, case studies, everything. As far as you know the company is one very imaginative dude scamming people for money.</p>
+			<p>So how would you know? I doesn't make much sense to admit a failure or a long series offailures unless it's true. Who would do that? Most of the people I worked with advised me notto put it up front. "It's bad marketing" or "bad sales". But I beg to differ, I think putting it outthere invokes trust.</p>
+			<p>And trust is good marketing.</p>
+			<p>Admitting you failed makes you human, makes you honest, makes you someone people canconfine to and therefore trust. And if you can prove that you’ve learned from the failuresyou’ve experienced, then you are useful to other people going through the same experiences. </p>
+			<p>Now at this point I might be painting a picture of an incompetent bunch. We do actually buildthings that work, and people use them. But if we are talking about trust I dont think flashy portfolios, sparkling website and app store links are enough to communicate the fact that youcan trust us with your project.</p>
+			<p>What makes a person trust you is knowing you can take a hit for them and they can stilldepend on you. And I guess what I’m trying to say is, we can take a hit.</p>
+			<h3>No really, meet the team.</h3>
+			<p>There’s a cool joke about engineers, goes something like... “Arguing with an engineer is like wrestling a pig, after a few hours you figure out the pig likes it”</p>
+			<p>If ever I ask myself, what am I, most of the times this joke answers it for me, and I can saythat the rest of the guys and girls are pretty much the same. We are a bunch of pigs who like to wrestle in the mud. We like to get hit, we don’t actuallywant to exit the maze, we just like to help people get through it.</p>
+			<p>At this point it feels to me I should segue into the 3rd act and form some kind of a conclusionabout who will you work with if you decide to work with us. Right when we started the company, as it happens, some investors were interested in buying in. Accompanied with the pitch deck we’ve put together was a small website where I tried to describe who we are and why they should give us money. I’ve thought about rewriting some of the bits and puttingvthem in this post, but now as I read them I decided to just put it in verbatim, my note to the investors.</p>
+			<p>We didn’t get the money.</p>
+			<blockquote class="snt-quotes">
+				<p>“It's hard to sum up a group of characters into a page, a paragraph, a story. </p>
+				<p>But if there is a common denominator to our group, best to describe us, then it would be: Wedon't give up.We are stupidly stubborn, we think building things matter even if facing insurmountable odds. Using LEGOs, wood, code, bolts and steel, we are engineers, but much deeper than that we are creators.</p>
+				<p>We constantly envision new things to build, and it's not a conscious choice that compels us.If you would ask any of us why we do what we do, you wouldn't be able to get a straightanswer, you would be confused, bedazzled except for one clear thing. You would feel ourpassion for the things we do. You would see that there is something behind the tech talk, thediagrams, flashy websites.We look for people with that itch, that passion, because without passion there is noperseverance, and without perseverance there is no success.</p>
+				<p>There is no creation.</p>
+			</blockquote>
+			<p>Hope to see you in the maze</p>
+		</div>
+		<div class="col-md-2" style="padding-left: 80px; border-left: 1px solid #FFC700;">
+			<h4>Published</h4>
+			<span style="color: white; font-size: 18px; line-height: 24px; margin: 20px 0 50px 0; display: block;">2019 / 22 / 11</span>
+			<h4>Read time</h4>
+			<span style="color: white; font-size: 18px; line-height: 24px; margin: 20px 0 50px 0; display: block;">8 min</span>
+			<h4>Skip to</h4>
+			<ul style="color: white; list-style: none; padding: 0; margin: 0; text-decoration: underline;">
+				<li style="padding: 10px 0 10px 0; font-size: 18px; line-height: 24px;">The Silver Lining</li>
+				<li style="padding: 10px 0 10px 0; font-size: 18px; line-height: 24px;">The Meta</li>
+				<li style="padding: 10px 0 10px 0; font-size: 18px; line-height: 24px;">No realy, meet the team</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2"><hr style="border-color: rgba(255, 199, 0, 0.75);"></div>
+		<div class="col-md-1 col-md-offset-2">
+			<img src="imgs/blog-author-img.png" width="110" height="110"  alt="">
+		</div>
+		<div class="col-md-7">
+			<h4>written by</h4>
+			<h3 style="text-align: left">Simun Strukan</h3>
+			<p style="text-align: left">Co-founder | CTO @ Sintezis Startup Studio</p>
+		</div>
+	</div>
+
+	
+	<div class="row">
+		<div class="col-md-4 col-md-offset-2">
+			<h3 style="text-align: left; font-size: 36px; line-height: 120.4%; margin: 70px 0 50px 0;">More from our blog</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-2">
+			<img src="imgs/blog-bg-md-placeholder-1.png" width="100%" alt="">
+		</div>
+		<div class="col-md-4">
+				<img src="imgs/blog-bg-md-placeholder-2.png" width="100%" alt="">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<button class="btn snt-btn center-block" style="margin-top:80px;" >VIEW MORE ARTICLES</button>
+		</div>
+	</div>
+
+	<section class="snt-footer-section">
+    <div class="row" style="padding-top: 35%;">
+      <div class="col-md-12">
+        <div class="snt-address-container pull-left">
+          <h3>Sintezis Startup Studio Ltd.</h3>
+          <p>Ground floor 8-9, Marino Mart, Dublin 3, D03P590</p>
+          <p>Dublin 3, D03P590,</p>
+          <p>Ireland</p>
+          <p style="margin-top: 50px;">Copyright © 2020 Sintezis - All right reserved</p>
+        </div>
+
+        <div class="snt-contact-container pull-right">
+          <h3>Connect with Us</h3>
+          <p>www.sintezis.co</p>
+          <p>info@sintezis.co</p>
+          <p>+285 98 1624 339</p>
+          <img src="imgs/icon_social_fb.png" class="pull-right" width="35" height="35" alt="">
+          <img src="imgs/icon_social_li.png"  class="pull-right" width="35" height="35" alt="">
+          <img src="imgs/icon_social_tw.png" class="pull-right" width="35" height="35" alt="">
+          <img src="imgs/icon_social_insta.png" class="pull-right" width="35" height="35" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</div>

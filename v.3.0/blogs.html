@@ -1,0 +1,123 @@
+<!-- style guide rules 
+
+1. use tabs instead of spaces! 
+tab size: 2 
+
+2. css classes order eg.
+  <elm class="snt-custom-class bootstrap-class"></elm>
+
+3. write short comment explanations for elements and events,
+explain the code and keep it simple
+
+4. !!WARNING!! html, header, body and similar tags are omttied for a reason, not by accident!
+Checkout the following google style guide https://google.github.io/styleguide/htmlcssguide.xml
+
+style guide rules end -->
+
+<!doctype html>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<title>Sintezis</title>
+
+<!-- Latest compiled and minified Boostrap 3 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400|Overpass:100,300,400,900" rel="stylesheet">
+
+<link href="css/navbar_style.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+
+
+<!-- here we use body tag to add custom classes to it, no need to close it, or account it in tags hierarchy  -->
+<body class="snt-body-bg">
+
+<!-- content -->
+<div class="snt-container container-fluid">
+
+  <nav class="snt-nav-bar navbar navbar-default navbar-fixed-top show">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img src="imgs/logo-white.png" class="navbar-brand" height="30" alt="">
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html#welcome">Welcome</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#team">The Team</a></li>
+          <li><a href="index.html#career">Career</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="">Partnership</a></li>
+        </ul>
+      </div>
+    </div>
+	</nav>
+
+	<div class="row" style="padding-top: 200px;">
+		<div class="col-md-2 col-md-offset-2">
+			<img src="imgs/blog-header-small-placholder-1.png" alt="" style="margin-top: 10px;">
+		</div>
+		<div class="col-md-6">
+			<h4>meet the sinezis team </h4>
+			<h2>We failed plenty so you don’t have to</h2>
+			<span style="margin: 20px 0 25px 0; display: block; font-family: Barlow; font-style: normal; font-weight: normal; font-size: 18px; line-height: 26px; color: white;"> 
+				<img src="imgs/date-icon.png" width="24" height="24" style="margin-right: 10px;" alt=""> 2010/22/11 
+			</span>
+			<p style="text-align: left; color: white;"> Little by little as we got better at our jobs, we gravitated towards the startup sector of the industry. Ah yes, the never ending startup maze. With that metaphor in mind you can think of us as your labyrint tour guide. We take youaround the maze, throw you a few historical facts along the way, and then escort you to thenearest exit. What that translates to is, we've been around. We've been around in the startup scene long enough to see a very large number of ways a startup can flop. Lot's of dead ends. Just like a maze, get it ?</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2"><hr style="border-color: rgba(255, 199, 0, 0.75);"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2 col-md-offset-2">
+			<img src="imgs/blog-header-small-placholder-2.png" alt="" style="margin-top: 10px;">
+		</div>
+		<div class="col-md-6">
+			<h4>very interesting subtitle</h4>
+			<h2>Comparing iOS TableView and Android RecyclerView</h2>
+			<span style="margin: 20px 0 25px 0; display: block; font-family: Barlow; font-style: normal; font-weight: normal; font-size: 18px; line-height: 26px; color: white;"> 
+				<img src="imgs/date-icon.png" width="24" height="24" style="margin-right: 10px;" alt=""> 2010/22/11 
+			</span>
+			<p style="text-align: left; color: white;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2"><hr style="border-color: rgba(255, 199, 0, 0.75);"></div>
+	</div>
+
+	<section class="snt-footer-section">
+    <div class="row" style="padding-top: 35%;">
+      <div class="col-md-12">
+        <div class="snt-address-container pull-left">
+          <h3>Sintezis Startup Studio Ltd.</h3>
+          <p>Ground floor 8-9, Marino Mart, Dublin 3, D03P590</p>
+          <p>Dublin 3, D03P590,</p>
+          <p>Ireland</p>
+          <p style="margin-top: 50px;">Copyright © 2020 Sintezis - All right reserved</p>
+        </div>
+
+        <div class="snt-contact-container pull-right">
+          <h3>Connect with Us</h3>
+          <p>www.sintezis.co</p>
+          <p>info@sintezis.co</p>
+          <p>+285 98 1624 339</p>
+          <img src="imgs/icon_social_fb.png" class="pull-right" width="35" height="35" alt="">
+          <img src="imgs/icon_social_li.png"  class="pull-right" width="35" height="35" alt="">
+          <img src="imgs/icon_social_tw.png" class="pull-right" width="35" height="35" alt="">
+          <img src="imgs/icon_social_insta.png" class="pull-right" width="35" height="35" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</div>
