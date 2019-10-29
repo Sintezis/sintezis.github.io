@@ -57,7 +57,6 @@ section {
 }
 
 /* TYPOGRAHPY */
-
 p {
 	font-family: Barlow;
 	font-style: normal;
@@ -603,7 +602,6 @@ h4 {
 	}
 }
 
-
 /* Footer Section */
 
 .snt-footer-section {
@@ -659,7 +657,6 @@ h4 {
 	}
 
 }
-
 
 /* BLOG POSTS PAGE */
 
@@ -820,7 +817,6 @@ h4 {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top:80px;
-
 }
 
 /* mobile */
@@ -838,6 +834,7 @@ h4 {
 	.snt-blog-sidebar {
 		display: none;
 	}	
+
 }
 
 
